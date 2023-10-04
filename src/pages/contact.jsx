@@ -2,12 +2,13 @@ import { FaRegUser } from "react-icons/fa";
 import { BsArrowUpRight } from "react-icons/bs";
 import Batton from "../componets/button";
 
+let contact = "Send Message";
 let color = "bg-blue-500";
 const ContactForm = () => {
   return (
     <>
       <div className="text-center ">
-        <h4 className="uppercase text-green-600 my-4">
+        <h4 className="uppercase text-blue-600 my-4">
           for any Query don not heistate to contact us here
         </h4>
       </div>
@@ -22,10 +23,9 @@ const ContactForm = () => {
             here to help. i wiil be the for you.`}
 
             <p className="flex justify-center text-center pt-5">
-              <i className="fa fa-arrow-right text-green-600 animate-bounce text-[30px] mx-2"></i>
               <p className="text-[50px]">Lets Goo!!!</p>
 
-              <i className="text-[80px] text-green-600 ">
+              <i className="text-[80px] text-blue-600 ">
                 <BsArrowUpRight />
               </i>
             </p>
@@ -61,7 +61,7 @@ const ContactForm = () => {
             className="text-[15px] first-letter:uppercase text-gray-500 font-mono outline-none border-b-2 p-1 bg-transparent tracking-wider my-4"
             placeholder="Message..."
           ></textarea>
-          <Batton color={color} />
+          <Batton color={color} contact={contact} />
         </form>
       </div>
     </>
