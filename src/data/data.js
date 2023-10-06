@@ -1,10 +1,10 @@
 const projectArray = [
   {
-    image: "mongodb.png",
-    project:
-      "I am Interecture with Mongo database and i worked with above years and i am still working with Mongo database",
+    image: "carshping.PNG",
+    project: "this project is about online-car-shping web",
     name: "Database",
     date: "new Date.now()",
+    link: "https://shoping-car-web-in-react-ceyzeb5tc-elisa-kwizeras-projects.vercel.app",
   },
   {
     image: "system.png",

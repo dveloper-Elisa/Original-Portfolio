@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 let color = "bg-blue-600";
 let color1 = "bg-gray-400";
-let contact = "Contact me";
+let contact = "Get my cv";
 let contact1 = "About me";
 
 const Home = () => {
@@ -16,21 +16,26 @@ const Home = () => {
             <br />
             Kwizera ELisa
           </p>
-          <p className="text-5xl first-letter:uppercase font-serif text-center animate-pulse">
+          <p className="text-5xl first-letter:uppercase font-serif text-center animate-pulse capitalize">
             a full stack Web developer
           </p>
           <div className=" font-serif tracking-wider first-letter:uppercase">
             i am specialised in different programming languages <br />I have
             turned into fullstack web developer
           </div>
+
           <div className="flex justify-around">
-            <Link to="/about">
-              {" "}
-              <Batton color={color} contact={contact} />{" "}
+            <Link
+              to="https://drive.google.com/file/d/17lswhfS0Pc_jHB6HGR6uvOpvV5P5U1mx/view?usp=drive_link"
+              target="_blank"
+            >
+              <Batton color={color} contact={contact} />
             </Link>
             <Link to="/about">
-              {" "}
               <Batton color={color1} contact={contact1} />
+            </Link>
+            <Link to="https://github.com/dveloper-Elisa" target="_blank">
+              <i className="fa fa-github-square text-[40px]"></i>
             </Link>
           </div>
         </div>
@@ -39,9 +44,9 @@ const Home = () => {
 
         <div className="flex flex-col items-center">
           <img
-            src="./Elisa.jpg"
+            src="./righted_position-removebg-preview.png"
             alt="image not found"
-            className="rounded-full max-w-[28vw] border border-blue-300 shadow-2xl opacity-70 z-0"
+            className="rounded-full max-w-[28vw] border border-blue-300 shadow-2xl  z-0"
           />
         </div>
       </div>

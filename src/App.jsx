@@ -1,6 +1,5 @@
 import "./App.css";
 
-import Batton from "./componets/button";
 import ContactForm from "./pages/contact";
 import Navigation from "./componets/naviation";
 import Home from "./pages/home";
@@ -8,10 +7,9 @@ import { Routes, Route } from "react-router-dom";
 import About from "./pages/aboutme";
 import Project from "./pages/projects";
 import Skills from "./pages/skills";
+import Certificates from "./pages/certificatePage";
+import Footer from "./componets/footer";
 
-let contact = "Contact me Now";
-let color = "bg-red-500";
-// let name = "Kamana";
 function App() {
   return (
     <>
@@ -22,8 +20,9 @@ function App() {
         <Route path="/projects" element={<Project />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<ContactForm />} />
+        <Route path="/certificates" element={<Certificates />} />
       </Routes>
-      <Batton color={color} contact={contact} />
+      <Footer />
     </>
   );
 }

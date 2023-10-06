@@ -1,11 +1,14 @@
-const Batton = (pros) => {
+const Batton = (props) => {
+  const { color, contact, onClick, classname } = props;
+
   return (
     <>
       <div className="">
         <button
-          className={`text-white w-full uppercase border-[2px] border-gray-500 px-10 py-1 rounded-xl ${pros.color}`}
+          className={`text-white w-full uppercase border-[2px] border-gray-500 px-10 py-1 rounded-xl ${color} ${classname}`}
+          onClick={onClick}
         >
-          {pros.contact}
+          {contact}
         </button>
       </div>
     </>
