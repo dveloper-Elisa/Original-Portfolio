@@ -1,4 +1,3 @@
-import { FaRegUser } from "react-icons/fa";
 import { BsArrowUpRight } from "react-icons/bs";
 import Batton from "../componets/button";
 import { useEffect, useState } from "react";
