@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const Navigation = () => {
-  const [isclosed, setIsclosed] = useState(false);
+  const [isclosed, setIsclosed] = useState(true);
 
   useEffect(() => {
-    setIsclosed(true);
+    setIsclosed(false);
   }, []);
   return (
     <>
@@ -14,10 +14,29 @@ const Navigation = () => {
           <img src="./logo.png" alt="Logo Not found" className="w-[8rem] " />
         </div>
         <nav
-          className={`flex lg:flex-row md:flex md:flex-row justify-end w-fit`}
+          className={`flex flex-col lg:flex-row md:flex md:flex-row justify-end w-fi`}
         >
-          <i className="fa fa-bars"></i>
-          <ul className={`text-black  flex flex-row gap-5  `}>
+          <i
+            className={`border text-[20px] w-fit p-1 fa cursor-pointer fa-close ${
+              isclosed ? "hidden" : "flex"
+            }`}
+            onClick={() => {
+              setIsclosed(true);
+            }}
+          ></i>
+          <i
+            className={`border text-[20px] w-fit p-1 fa cursor-pointer fa-bars ${
+              isclosed ? "flex" : "hidden"
+            }`}
+            onClick={() => {
+              setIsclosed(false);
+            }}
+          ></i>
+          <ul
+            className={`text-black flex flex-row gap-5 ${
+              isclosed ? "hidden" : " flex flex-col "
+            }`}
+          >
             <Link to="/">
               <li className="first-letter:uppercase">Home</li>
             </Link>
