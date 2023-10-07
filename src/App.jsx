@@ -9,6 +9,7 @@ import Project from "./pages/projects";
 import Skills from "./pages/skills";
 import Certificates from "./pages/certificatePage";
 import Footer from "./componets/footer";
+import Notfound from "./pages/pagenotfound";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<ContactForm />} />
         <Route path="/certificates" element={<Certificates />} />
+        <Route path="/*" element={<Notfound />} />
       </Routes>
       <Footer />
     </>

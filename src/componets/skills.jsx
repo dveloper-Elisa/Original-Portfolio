@@ -13,8 +13,8 @@ const Skillcomponent = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 bg-slate-300 px-16">
-        <div className="grid grid-cols-1  border-b-2">
+      <div className="grid grid-cols-1 bg-slate-300 px-16 w-screen">
+        <div className="grid grid-cols-1  border-b-2 py-5 text-center text-[20px]">
           Ihave possesses a diverse skill set in the field of Full Stack Web
           Development, including proficiency in the following key areas:
         </div>
@@ -24,16 +24,16 @@ const Skillcomponent = () => {
           </h3>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 gap-8 border-b-2">
-          {frontend.map((frontEnd) => {
+          {frontend.map((frontEnd, index) => {
             return (
               <>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center" key={index}>
                   <img
                     src={`./${frontEnd.image}`}
                     alt="Skill photo not found"
                     className="rounded-full w-[5rem] h-[5rem]"
                   />
-                  <p className=" text-center first-letter:uppercase">
+                  <p className=" text-center first-letter:uppercase hidden lg:flex md:flex sm:hidden">
                     {frontEnd.content}
                   </p>
                 </div>
@@ -48,17 +48,17 @@ const Skillcomponent = () => {
           </h3>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 gap-8 border-b-2">
-          {backend.map((frontEnd) => {
+          {backend.map((backEnd, index) => {
             return (
               <>
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center" key={index}>
                   <img
-                    src={`./${frontEnd.image}`}
+                    src={`./${backEnd.image}`}
                     alt="Skill photo not found"
                     className="rounded-full w-[5rem] h-[5rem]"
                   />
-                  <p className=" text-center first-letter:uppercase">
-                    {frontEnd.content}
+                  <p className=" text-center first-letter:uppercase hidden lg:flex md:flex sm:hidden">
+                    {backEnd.content}
                   </p>
                 </div>
               </>

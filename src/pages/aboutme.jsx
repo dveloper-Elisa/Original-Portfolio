@@ -41,7 +41,7 @@ const About = () => {
             <img
               src="./righted_position-removebg-preview.png"
               alt="image is here"
-              className="w-[20vw] rounded-full"
+              className="w-[20vw] rounded-full hidden lg:flex md:flex smd:hidden"
             />
           </div>
 

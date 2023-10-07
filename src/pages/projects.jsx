@@ -18,7 +18,6 @@ const Project = () => {
               <Card
                 name={proj.name}
                 project={proj.project}
-                date={proj.date}
                 image={proj.image}
                 link={proj.link}
               />

@@ -31,12 +31,12 @@ const Card = (pros) => {
                   {pros.name}
                 </h5>
               </div>
-              <p className="font-antiqua ">{pros.project}</p>
+              <p className="font-antiqua bg-slate-900 text-white px-1 max-w-fit">
+                {pros.project}
+              </p>
               <div className="flex items-center gap-10  justify-end">
                 <p className="font-mono">Kwizera</p>
-                <p className="text-[10px] tracking-widest text-white">
-                  {pros.date}
-                </p>
+
                 <p
                   id="dack"
                   className="cursor-pointer"

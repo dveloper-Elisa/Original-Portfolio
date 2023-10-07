@@ -11,12 +11,14 @@ const Home = () => {
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 bg-slate-200 px-16">
         <div className="flex flex-col text-center gap-5">
-          <p className="text-[5rem] text-blue-600 font-serif">
-            <span className="font-serif font-thin text-[3rem]">This is</span>
+          <p className="text-[2rem] lg:text-[5rem] md:text-[5rem] smd:text-[2rem]  text-blue-600 font-serif">
+            <span className="font-serif font-thin text-[1rem] lg:text-[3rem] md:text-[3rem] smd:text-[1rem] ">
+              This is
+            </span>
             <br />
             Kwizera ELisa
           </p>
-          <p className="text-5xl first-letter:uppercase font-serif text-center animate-pulse capitalize">
+          <p className="text-4xl first-letter:uppercase font-serif text-center animate-pulse capitalize lg:text-[5xl] md:text-[5xl] sm:text-[2xl] ">
             a full stack Web developer
           </p>
           <div className=" font-serif tracking-wider first-letter:uppercase">
@@ -24,7 +26,7 @@ const Home = () => {
             turned into fullstack web developer
           </div>
 
-          <div className="flex justify-around">
+          <div className="flex flex-col lg:flex-row md:flex-row sm:flex-col justify-around gap-3">
             <Link
               to="https://drive.google.com/file/d/17lswhfS0Pc_jHB6HGR6uvOpvV5P5U1mx/view?usp=drive_link"
               target="_blank"

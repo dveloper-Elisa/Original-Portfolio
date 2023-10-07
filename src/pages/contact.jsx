@@ -1,4 +1,3 @@
-import { BsArrowUpRight } from "react-icons/bs";
 import Batton from "../componets/button";
 import { useEffect, useState } from "react";
 
@@ -28,9 +27,7 @@ const ContactForm = () => {
         </div>
         <div className="text-black grid lg:grid-cols-2 gap-5 rounded-xl bg-slate-500 mx-16 p-1">
           <div className="flex justify-center items-center flex-col ">
-            <i className="fa fa-phone text-black text-[100px]">
-              <FaRegUser />
-            </i>
+            <i className="fa fa-phone text-black text-[100px]"></i>
             <p>
               {`This is Elisa Kwizera, here is on my portforial'contact form, if
             have any opinion or questions, fell free to reach out me, we are
@@ -40,7 +37,7 @@ const ContactForm = () => {
                 <p className="text-[50px]">Lets Goo!!!</p>
 
                 <i className="text-[80px] text-blue-600 ">
-                  <BsArrowUpRight />
+                  <i className="fa fa-send"></i>
                 </i>
               </p>
             </p>
