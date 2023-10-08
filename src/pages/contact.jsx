@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 let contact = "Send Message";
 let color = "bg-blue-500";
 
-const ContactForm = () => {
+const ContactForm = (pros) => {
   const [users, setUsers] = useState("");
   const [uname, setUname] = useState("");
   const [phone, setPhone] = useState("");
@@ -19,9 +19,13 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className="bg-slate-300  -mt-4">
+      <div
+        className={` -mt-4 ${
+          pros.darkmode ? "bg-slate-900 " : "bg-slate-300 "
+        }`}
+      >
         <div className="text-center ">
-          <h4 className="uppercase text-blue-600 my-4">
+          <h4 className="uppercase text-blue-600 my-4 font-semibold text-xl">
             for any Query don not heistate to contact us here
           </h4>
         </div>
@@ -36,7 +40,7 @@ const ContactForm = () => {
               <p className="flex justify-center text-center pt-5">
                 <p className="text-[50px]">Lets Goo!!!</p>
 
-                <i className="text-[80px] text-blue-600 ">
+                <i className="text-[80px] text-blue-400 ">
                   <i className="fa fa-send"></i>
                 </i>
               </p>
@@ -44,9 +48,9 @@ const ContactForm = () => {
           </div>
           <form
             action="#"
-            className="text-black my-4 font-mono grid border rounded-xl p-4"
+            className="text-white my-4 font-mono grid border rounded-xl p-4"
           >
-            <h3 className="text-blue-600 text-center text-[20px] capitalize">
+            <h3 className="text-white text-center text-[20px] capitalize">
               get in touch
             </h3>
             <input
@@ -55,7 +59,7 @@ const ContactForm = () => {
               onChange={(e) => {
                 setUname(e.target.value);
               }}
-              className="text-[15px] first-letter:uppercase font-mono outline-none border-b-2 p-1 bg-transparent tracking-wider my-4"
+              className="text-[20px] first-letter:uppercase font-mono outline-none border-b-2 p-1 bg-transparent tracking-wider my-4"
               placeholder="Name..."
             />
             <input
@@ -64,7 +68,7 @@ const ContactForm = () => {
               onChange={(e) => {
                 setPhone(e.target.value);
               }}
-              className="text-[15px] first-letter:uppercas font-mono outline-none border-b-2 p-1 bg-transparent tracking-wider my-4"
+              className="text-[20px] first-letter:uppercas font-mono outline-none border-b-2 p-1 bg-transparent tracking-wider my-4"
               placeholder="+250 7..."
             />
             <input
@@ -73,7 +77,7 @@ const ContactForm = () => {
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
-              className="text-[15px] first-letter:uppercase font-mono outline-none border-b-2 p-1 bg-transparent tracking-wider my-4"
+              className="text-[20px] first-letter:uppercase font-mono outline-none border-b-2 p-1 bg-transparent tracking-wider my-4"
               placeholder="Email Address"
             />
             <textarea
@@ -83,7 +87,7 @@ const ContactForm = () => {
               }}
               cols="10"
               rows="3"
-              className="text-[15px] first-letter:uppercase font-mono outline-none border-b-2 p-1 bg-transparent tracking-wider my-4"
+              className="text-[20px] first-letter:uppercase font-mono outline-none border-b-2 p-1 bg-transparent tracking-wider my-4"
               placeholder="Message..."
             ></textarea>
             <Batton

@@ -1,7 +1,11 @@
-const About = () => {
+const About = (pros) => {
   return (
     <>
-      <div className="flex flex-col bg-slate-300">
+      <div
+        className={`flex flex-col ${
+          pros.darkmode ? "bg-slate-900" : "bg-slate-300"
+        } `}
+      >
         <div className="flex justify-center lg:text-[60px] md:text-[30px] text-[20px] text-center font-bold capitalize text-blue-600 mt-2">
           Who is Me ?
         </div>

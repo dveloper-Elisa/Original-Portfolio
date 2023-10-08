@@ -6,10 +6,14 @@ let color1 = "bg-gray-400";
 let contact = "Get my cv";
 let contact1 = "About me";
 
-const Home = () => {
+const Home = (pros) => {
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 bg-slate-200 px-16">
+      <div
+        className={`grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 ${
+          pros.darkmode ? "bg-slate-900" : "bg-slate-200"
+        }  px-16 ${pros.colors}`}
+      >
         <div className="flex flex-col text-center gap-5">
           <p className="text-[2rem] lg:text-[5rem] md:text-[5rem] smd:text-[2rem]  text-blue-600 font-serif">
             <span className="font-serif font-thin text-[1rem] lg:text-[3rem] md:text-[3rem] smd:text-[1rem] ">

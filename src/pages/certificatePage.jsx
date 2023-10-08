@@ -3,7 +3,7 @@ import Certificates from "../componets/certificate";
 
 import certified from "../data/certificate";
 
-const CertificatePage = () => {
+const CertificatePage = (pros) => {
   const [certificates, setCirtificates] = useState([]);
 
   useEffect(() => {
@@ -12,7 +12,11 @@ const CertificatePage = () => {
 
   return (
     <>
-      <div className="grid grid-cols-1 capitalize lg:grid-cols-3 md:grid-cols-3 bg-slate-300 sm:grid-cols-2 gap-10 px-16">
+      <div
+        className={`grid grid-cols-1 capitalize lg:grid-cols-3 md:grid-cols-3  sm:grid-cols-2 gap-10 px-16 ${
+          pros.darkmode ? "bg-slate-900" : "bg-slate-300"
+        }`}
+      >
         {certificates.map((certificat) => {
           return (
             <>

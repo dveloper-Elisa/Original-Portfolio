@@ -1,22 +1,12 @@
-import { useEffect } from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Card = (pros) => {
-  const [darkmode, setDarkMode] = useState(true);
-  useEffect(() => {
-    setDarkMode(false);
-  }, []);
   return (
     <>
       <div className="">
         <Link to={`${pros.link}`} target="_blank">
           <div
-            className={` ${
-              darkmode
-                ? "bg-slate-800 grid grid-cols-1 p-2 gap-3 dark:bg-slate-800 text-white ring-slate-900/5 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 rounded-xl shadow-2xl"
-                : "grid grid-cols-1  bg-gray-400 p-2 gap-3 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 rounded-2xl"
-            }`}
+            className={`grid grid-cols-1  bg-slate-700  p-2 gap-3 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 rounded-2xl`}
           >
             <div className="">
               <img
@@ -31,21 +21,11 @@ const Card = (pros) => {
                   {pros.name}
                 </h5>
               </div>
-              <p className="font-antiqua bg-slate-900 text-white px-1 max-w-fit">
+              <p className="font-antiqua bg-slate-500 rounded-lg text-white px-1 max-w-fit">
                 {pros.project}
               </p>
               <div className="flex items-center gap-10  justify-end">
-                <p className="font-mono">Kwizera</p>
-
-                <p
-                  id="dack"
-                  className="cursor-pointer"
-                  onClick={() => {
-                    darkmode ? setDarkMode(false) : setDarkMode(true);
-                  }}
-                >
-                  Dack
-                </p>
+                <p className="font-mono text-white">Kwizera</p>
               </div>
             </div>
           </div>

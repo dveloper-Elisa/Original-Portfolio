@@ -7,20 +7,17 @@ const projectArray = [
   },
   {
     image: "system.png",
-    project:
-      "I am Interecture with Mongo database and i worked with above years and i am still working with Mongo database",
+    project: "  still working with Mongo database",
     name: "backend analysis",
   },
   {
     image: "react.png",
-    project:
-      "I am Interecture with Mongo database and i worked with above years and i am still working with Mongo database",
+    project: " still working with Mongo database",
     name: "calculator",
   },
   {
     image: "reactVite.png",
-    project:
-      "I am Interecture with Mongo database and i worked with above years and i am still working with Mongo database",
+    project: "still working with Mongo database",
     name: "Film App",
   },
 ];

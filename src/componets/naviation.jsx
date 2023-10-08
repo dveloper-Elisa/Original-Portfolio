@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const Navigation = () => {
+const Navigation = (pros) => {
   const [isclosed, setIsclosed] = useState(true);
   return (
     <>
-      <div className="flex flex-row items-center justify-between sticky bg-gray-400 top-0 z-10 px-16">
+      <div
+        className={`flex flex-row items-center justify-between sticky bg-gray-400 top-0 z-10 px-16 ${pros.color}`}
+      >
         <div className="flex">
           <img src="./logo.png" alt="Logo Not found" className="w-[8rem] " />
         </div>
