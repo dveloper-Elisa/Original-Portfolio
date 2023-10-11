@@ -10,9 +10,11 @@ const Home = (pros) => {
   return (
     <>
       <div
-        className={`grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 ${
-          pros.darkmode ? "bg-slate-900" : "bg-slate-200"
-        }  px-16 ${pros.colors}`}
+        className={`flex flex-col lg:flex-row md:flex-row
+        justify-between
+        sm:flex-col ${pros.darkmode ? "bg-slate-900" : "bg-slate-200"}  px-16 ${
+          pros.colors
+        }`}
       >
         <div className="flex flex-col text-center gap-5">
           <p className="text-[2rem] lg:text-[5rem] md:text-[5rem] smd:text-[2rem]  text-blue-600 font-serif">
@@ -48,12 +50,14 @@ const Home = (pros) => {
 
         {/* image devission */}
 
-        <div className="flex flex-col items-center">
-          <img
-            src="./righted_position-removebg-preview.png"
-            alt="image not found"
-            className="rounded-full max-w-[28vw] border border-blue-300 shadow-2xl  z-0"
-          />
+        <div className="flex flex-col items-center py-4">
+          <picture>
+            <img
+              src="./righted_position-removebg-preview.png"
+              alt="image not found"
+              className=" max-w-[28vw] border border-blue-300 shadow-2xl z-0 rounded-full"
+            />
+          </picture>
         </div>
       </div>
     </>

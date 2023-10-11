@@ -3,10 +3,11 @@ import { useState } from "react";
 
 const Navigation = (pros) => {
   const [isclosed, setIsclosed] = useState(true);
+
   return (
     <>
       <div
-        className={`flex flex-row items-center justify-between sticky bg-gray-400 top-0 z-10 px-16 ${pros.color}`}
+        className={`flex flex-row items-center justify-between sticky bg-slate-600 top-0 z-10 px-16 ${pros.colo}`}
       >
         <div className="flex">
           <img src="./logo.png" alt="Logo Not found" className="w-[8rem] " />
@@ -31,43 +32,73 @@ const Navigation = (pros) => {
             }}
           ></i>
           <ul
-            className={`md:flex md:flex-row md:gap-5 ${
+            className={`md:flex text-white md:flex-row md:gap-5 ${
               isclosed
                 ? "hidden"
                 : "flex flex-col gap-5 h-screen w-[80%] mx-16 bg-slate-400 p-1 md:bg-slate-400 absolute -left-16 top-16"
             }`}
           >
-            <Link to="/">
-              <li className="text-[18px] first-letter:uppercase hover:text-white hover:bg-slate-50over:transition hover:duration-500 ">
+            <Link
+              to="/"
+              onClick={() => {
+                setIsclosed(true);
+              }}
+            >
+              <li className="text-[18px] first-letter:uppercase  hover:transition hover:duration-500 ">
                 Home
               </li>
             </Link>
 
-            <Link to="/certificates">
+            <Link
+              to="/certificates"
+              onClick={() => {
+                setIsclosed(true);
+              }}
+            >
               <li className="text-[18px] first-letter:uppercase hover:text-white hover:transition hover:duration-500 hover:">
                 Certificates
               </li>
             </Link>
 
-            <Link to="/projects">
+            <Link
+              to="/projects"
+              onClick={() => {
+                setIsclosed(true);
+              }}
+            >
               <li className="text-[18px] first-letter:uppercase hover:text-white hover:transition hover:duration-500 hover:">
                 Projects
               </li>
             </Link>
 
-            <Link to="/skills">
+            <Link
+              to="/skills"
+              onClick={() => {
+                setIsclosed(true);
+              }}
+            >
               <li className="text-[18px] first-letter:uppercase hover:text-white hover:transition hover:duration-500 hover:">
                 Skills
               </li>
             </Link>
 
-            <Link to="/about">
+            <Link
+              to="/about"
+              onClick={() => {
+                setIsclosed(true);
+              }}
+            >
               <li className="text-[18px] first-letter:uppercase hover:text-white hover:transition hover:duration-500 hover:">
                 About Me
               </li>
             </Link>
 
-            <Link to="/contact">
+            <Link
+              to="/contact"
+              onClick={() => {
+                setIsclosed(true);
+              }}
+            >
               <li className="first-letter:uppercase hover:text-white hover:transition hover:duration-500 text-[18px]">
                 Contact
               </li>

@@ -4,7 +4,7 @@ const Footer = (pros) => {
   return (
     <>
       <div
-        className={`grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 px-16  ${
+        className={`grid grid-cols-1 sticky -bottom-30 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 px-16  ${
           pros.darkmode ? "bg-slate-700" : "bg-slate-300"
         }`}
       >
@@ -12,9 +12,9 @@ const Footer = (pros) => {
           <h3>
             <u>My contact</u>
           </h3>
-          <p className="fa fa-phone-square">
-            +250 787647168 <br />
-            +250 726982830
+          <p className="fa fa-phone-square mb-5">
+            <p className="absolute top-9 pl-5">+250 787647168</p>
+            <p className="absolute top-14 pl-5">+250 726982830</p>
           </p>
 
           <Link to="https://github.com/dveloper-Elisa" target="_blank">
@@ -29,9 +29,12 @@ const Footer = (pros) => {
           <h3>
             <u>My socil Media</u>
           </h3>
-          <Link to="/about">
+          <Link
+            to="https://www.linkedin.com/in/kwizera-elissa-640448224/"
+            target="_blank"
+          >
             <p className="">
-              <i className="fa fa-linkedin-square"> Know Me</i>
+              <i className="fa fa-linkedin-square"> Linked In</i>
             </p>
           </Link>
           <Link to="https://twitter.com/home" target="_black">

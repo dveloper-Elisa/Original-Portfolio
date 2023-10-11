@@ -63,15 +63,12 @@ const About = (pros) => {
               className="w-[25vw] rounded-full rotate-12"
             />
           </div>
-          <div className="translate-x-4 ">
+          <div className="translate-x-4 mb-3">
             With a solid foundation in Information Technology, an impressive
             range of programming languages and technologies at their disposal,
             and a genuine passion for crafting user-friendly and efficient web
-            applications, Kwizera Elisa is well-prepared to contribute their
-            expertise to projects across the full stack web development
-            spectrum. Their dedication to delivering high-quality solutions and
-            their eagerness to collaborate make them an ideal candidate for a
-            variety of web development roles.
+            applications, I am well-prepared to contribute My expertise to
+            projects across the full stack web development spectrum.
           </div>
         </div>
         <br />

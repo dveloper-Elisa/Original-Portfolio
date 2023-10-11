@@ -1,5 +1,3 @@
-import "./App.css";
-
 import ContactForm from "./pages/contact";
 import Navigation from "./componets/naviation";
 import Home from "./pages/home";
@@ -22,8 +20,8 @@ function App() {
     <div
       className={`${
         darkmode
-          ? "bg-slate-900 p-2 gap-3  text-white ring-slate-900/5 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 rounded-xl shadow-2xl"
-          : "bg-gray-400 p-2 gap-3 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 rounded-2xl"
+          ? "bg-slate-900 p-2 gap-3  text-white ring-slate-900/5 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 shadow-2xl"
+          : "bg-gray-400 gap-3 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 p-0"
       }`}
     >
       <p
