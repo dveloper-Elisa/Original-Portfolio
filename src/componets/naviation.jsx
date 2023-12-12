@@ -35,7 +35,7 @@ const Navigation = (pros) => {
             className={`md:flex text-white md:flex-row md:gap-5 ${
               isclosed
                 ? "hidden"
-                : "flex flex-col gap-5 h-screen w-[80%] mx-16 bg-slate-400 p-1 md:bg-slate-400 absolute -left-16 top-16"
+                : "flex flex-col gap-5 h-screen w-[80%] mx-16 bg-slate-600 p-1 md:bg-slate-400 absolute -left-16 top-16"
             }`}
           >
             <Link

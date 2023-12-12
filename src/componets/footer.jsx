@@ -5,7 +5,7 @@ const Footer = (pros) => {
     <>
       <div
         className={`grid grid-cols-1 sticky -bottom-30 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 px-16  ${
-          pros.darkmode ? "bg-slate-700" : "bg-slate-300"
+          pros.darkmode ? "bg-slate-700" : "bg-slate-600 text-white"
         }`}
       >
         <div className="flex flex-col gap-3 ">
