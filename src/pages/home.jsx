@@ -50,7 +50,7 @@ const Home = (pros) => {
 
         {/* image devission */}
 
-        <div className="flex flex-col items-center py-4">
+        <div className="flex flex-col items-center mr-11 py-4 transition-all duration-1000 animate-spin-custom hover:scale-105">
           <picture>
             <img
               src="./righted_position-removebg-preview.png"

@@ -1,5 +1,11 @@
 const certified = [
   {
+    image: "hackerrank Java(Basics).JPG",
+    description:
+      " This certifys that i have been ranked with hackerrank in java(Basics)",
+    link: "https://www.hackerrank.com/certificates/6d1de25c906c",
+  },
+  {
     image: "html certificate.PNG",
     description:
       " I gained certificate of Completion in Front End development HTML from Great Learning Accademy",
