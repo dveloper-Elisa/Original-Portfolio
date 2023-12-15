@@ -34,7 +34,7 @@ const Home = (pros) => {
 
           <div className="flex flex-col lg:flex-row md:flex-row sm:flex-col justify-around gap-3">
             <Link
-              to="https://drive.google.com/file/d/17lswhfS0Pc_jHB6HGR6uvOpvV5P5U1mx/view?usp=drive_link"
+              to="https://drive.google.com/file/d/1TKin6dqhYlr4A65zwXYlof4qNtbAtPE-/view?usp=sharing"
               target="_blank"
             >
               <Batton color={color} contact={contact} />
