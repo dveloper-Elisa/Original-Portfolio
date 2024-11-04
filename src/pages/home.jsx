@@ -1,65 +1,117 @@
 import Batton from "../componets/button";
 import { Link } from "react-router-dom";
+import About from "./aboutme";
 
-let color = "bg-blue-600";
-let color1 = "bg-gray-400";
-let contact = "Get my cv";
-let contact1 = "About me";
-
-const Home = (pros) => {
+const Home = () => {
   return (
     <>
-      <div
-        className={`flex flex-col lg:flex-row md:flex-row
-        justify-between
-        sm:flex-col ${pros.darkmode ? "bg-slate-900" : "bg-slate-200"}  px-16 ${
-          pros.colors
-        }`}
-      >
-        <div className="flex flex-col text-center gap-5">
-          <p className="text-[2rem] lg:text-[5rem] md:text-[5rem] smd:text-[2rem]  text-blue-600 font-serif">
-            <span className="font-serif font-thin text-[1rem] lg:text-[3rem] md:text-[3rem] smd:text-[1rem] ">
-              This is
-            </span>
-            <br />
-            Kwizera ELisa
-          </p>
-          <p className="text-4xl first-letter:uppercase font-serif text-center animate-pulse capitalize lg:text-[5xl] md:text-[5xl] sm:text-[2xl] ">
-            a full stack Web developer
-          </p>
-          <div className=" font-serif tracking-wider first-letter:uppercase">
-            i am specialised in different programming languages <br />I have
-            turned into fullstack web developer
-          </div>
-
-          <div className="flex flex-col lg:flex-row md:flex-row sm:flex-col justify-around gap-3">
-            <Link
-              to="https://drive.google.com/file/d/1TKin6dqhYlr4A65zwXYlof4qNtbAtPE-/view?usp=sharing"
-              target="_blank"
-            >
-              <Batton color={color} contact={contact} />
-            </Link>
-            <Link to="/about">
-              <Batton color={color1} contact={contact1} />
-            </Link>
-            <Link to="https://github.com/dveloper-Elisa" target="_blank">
-              <i className="fa fa-github-square text-[40px]"></i>
-            </Link>
+    <div className="flex flex-col items-center h-screen w-full justify-evenly">
+      <div className="flex items-center w-[63rem] justify-between">
+        {/* RIGHT SECTION */}
+        <div className="w-1/3">
+          <div>
+            <p className="">
+              <p className="text-[2rem]">I'm </p>
+              <br />
+              <p className="font-extrabold text-[2.5rem] mb-5">Elisa Kwizera</p>
+            </p>
+            <hr className="w-1/2 h-[5px] border-none bg-yellow-500" />
+            <p className="flex-wrap mt-5 line-clamp-10">
+              A full-stack Developer, who developes mobile application, web
+              application, and progressive web apllication. desigin UI,UX, with
+              more than 3years of experience
+            </p>
           </div>
         </div>
 
-        {/* image devission */}
+        {/* CENTER SECTION */}
+        <div className="absolute left-[31.5rem]">
+          <img
+            src="./resized.png"
+            alt="welcome profile"
+            className="w-[30rem] rounded-full z-50"
+          />
+        </div>
 
-        <div className="flex flex-col items-center mr-11 py-4 transition-all duration-1000 animate-spin-custom hover:scale-105">
-          <picture>
-            <img
-              src="./righted_position-removebg-preview.png"
-              alt="image not found"
-              className=" max-w-[28vw] border border-blue-300 shadow-2xl z-0 rounded-full"
-            />
-          </picture>
+        {/* LEFT SECTION */}
+        <div className="w-1/3">
+          <div>
+            <p className="font-light text-lg mb-5">Services</p>
+            <p>
+              We build qualited products with software development, to make our
+              cutomers smile
+            </p>
+
+            <p className="flex items-center justify-evenly mt-5">
+              <Link
+                to={"https://web.facebook.com/kwizera.elissa.14"}
+                target="_blank"
+                className=""
+              >
+                <i className="fa fa-facebook text-yellow-500 rounded-full bg-slate-500 p-4 w-5 h-5 flex items-center justify-center">
+                  {" "}
+                </i>
+              </Link>
+              <Link to={"https://x.com/KwizersE"} target="_blank" className="">
+                <i className="fa fa-twitter text-yellow-500 rounded-full bg-slate-500 p-4 w-5 h-5 flex items-center justify-center">
+                  {" "}
+                </i>
+              </Link>
+              <Link
+                to={"https://www.instagram.com/kwizeraelissa369/"}
+                target="_blank"
+                className=""
+              >
+                <i className="fa fa-instagram text-yellow-500 rounded-full bg-slate-500 p-4 w-5 h-5 flex items-center justify-center">
+                  {" "}
+                </i>
+              </Link>
+              <Link
+                to={"https://wa.me/250787647168"}
+                target="_blank"
+                className=""
+              >
+                <i className="fa fa-whatsapp text-yellow-500 rounded-full bg-slate-500 p-4 w-5 h-5 flex items-center justify-center">
+                  {" "}
+                </i>
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
+
+      <div className="w-[63rem] bg-slate-800 p-5">
+        <div className="flex items-center justify-between gap-5">
+          <div className="rounded-sm bg-slate-600 p-2">
+            <img src="./Picture1.png" alt="Tyaza limted" className="w-20" />
+          </div>
+          <div className="rounded-sm bg-slate-600 p-2">
+            <img src="./download.jpeg" alt="Tyaza limted" className="w-20 h-6" />
+          </div>
+          <div className="rounded-sm bg-slate-600 p-2">
+            <img src="./qt=q_95.webp" alt="Tyaza limted" className="w-20 h-6" />
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+    {/* WHAT I DO */}
+
+    <div className="flex items-center w-[63rem]">
+
+      <div>
+
+
+      </div>
+
+      {/* secodn div */}
+      <div>
+        
+      </div>
+
+    </div>
     </>
   );
 };

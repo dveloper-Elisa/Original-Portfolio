@@ -1,7 +1,7 @@
 const About = (pros) => {
   return (
     <>
-      <div
+      <div id="about"
         className={`flex flex-col ${
           pros.darkmode ? "bg-slate-900" : "bg-slate-300"
         } `}
@@ -10,7 +10,7 @@ const About = (pros) => {
           Who is Me ?
         </div>
         <div className="flex flex-col lg:flex-row md:flex-row sm:flex-col items-center px-16 gap-5">
-          <div className="  min-w-fit">
+          <div className="min-w-fit">
             <img
               src="./lefted_position-removebg-preview.png"
               alt="image is here"

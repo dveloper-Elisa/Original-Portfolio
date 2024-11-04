@@ -1,19 +1,21 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const Navigation = (pros) => {
+const Navigation = () => {
   const [isclosed, setIsclosed] = useState(true);
 
   return (
     <>
       <div
-        className={`flex flex-row items-center justify-between sticky bg-slate-600 top-0 z-10 px-16 ${pros.colo}`}
+        className={`flex flex-row items-center justify-evenly sticky bg-blend-darken shadow-xl top-0 z-10 max-w-[100vw]`}
       >
-        <div className="flex">
-          <img src="./logo.png" alt="Logo Not found" className="w-[8rem] " />
-        </div>
-        <nav
-          className={`flex flex-col lg:flex-row md:flex md:flex-row justify-end w-fit`}
+        <div className="flex items-center justify-between gap-10">
+          {/* <img src="./logo.png" alt="Logo Not found" className="w-[4rem] " /> */}
+          <div><p className="font-bold font-sans p-[1rem]"> <i className="fa fa-file-picture-o"></i> Elisa Developer</p></div>
+
+          <div>
+          <nav
+          className={`flex flex-col lg:flex-row md:flex md:flex-row justify-end w-fit font-light`}
         >
           <i
             className={`border text-[20px] w-fit p-1 fa cursor-pointer fa-close ${
@@ -82,8 +84,8 @@ const Navigation = (pros) => {
               </li>
             </Link>
 
-            <Link
-              to="/about"
+            <a
+              href="#about"
               onClick={() => {
                 setIsclosed(true);
               }}
@@ -91,7 +93,7 @@ const Navigation = (pros) => {
               <li className="text-[18px] first-letter:uppercase hover:text-white hover:transition hover:duration-500 hover:">
                 About Me
               </li>
-            </Link>
+            </a>
 
             <Link
               to="/contact"
@@ -104,7 +106,15 @@ const Navigation = (pros) => {
               </li>
             </Link>
           </ul>
-        </nav>
+          </nav>
+          </div>
+        </div>
+        <div className="flex items-center gap-10">
+          <Link to={"https://www.linkedin.com/in/kwizera-elissa-640448224/"} target="_blank"><i className="fa fa-linkedin text-yellow-500"></i></Link> 
+          <Link to={"https://github.com/dveloper-Elisa"} target="_blank"><i className="fa fa-github text-yellow-500"></i></Link>
+          <Link to={"mailto:kwizeraelisa77@gmail.com"} target="_blank"><i className="fa fa-envelope-o text-yellow-500"></i></Link>
+          
+        </div>
       </div>
     </>
   );
