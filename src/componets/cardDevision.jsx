@@ -1,50 +1,45 @@
 import { Link } from "react-router-dom";
 
-const Card = (pros) => {
+const Card = ({ link, name, image, lang1, lang2, lang3, lang4, date }) => {
   return (
-    <>
-      <div className="">
-        <Link to={`${pros.link}`} target="_blank">
-          <div
-            className={`grid grid-cols-1  bg-slate-700  p-2 gap-3 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 rounded-2xl`}
-          >
-            <div className="">
-              <img
-                src={`./${pros.image}`}
-                alt="database not found"
-                className="rounded-xl flex lg:flex md:flex sm:hidden"
-              />
-            </div>
-            <div className="flex  flex-col lg:gap-8 md:gap-6 sm:gap-2">
-              <div className="flex justify-center">
-                <h5 className="uppercase rounded font-mono text-[20px] bg-gray-500  w-fit px-3">
-                  {pros.name}
-                </h5>
-              </div>
-              <div className=" flex gap-2 flex-wrap p-2">
-                <p className="font-antiqua bg-slate-500 text-white px-1 max-w-fit">
-                  {pros.lang1}
-                </p>
-                <p className="font-antiqua bg-slate-500 text-white px-1 max-w-fit">
-                  {pros.lang2}
-                </p>
-                <p className="font-antiqua bg-slate-500 text-white px-1 max-w-fit">
-                  {pros.lang3}
-                </p>
-                <p className="font-antiqua bg-slate-500 text-white px-1 max-w-fit">
-                  {pros.lang4}
-                </p>
-              </div>
-              <div className="flex items-center gap-10  justify-end">
-                <p className="font-mono text-white">
-                  Completed on: {pros.date}
-                </p>
-              </div>
-            </div>
+    <div className="w-full flex items-center justify-center p-4">
+      <Link to={link} target="_blank">
+        <div className="flex flex-col p-4 rounded-2xl bg-slate-900 shadow-lg transform transition duration-1000 hover:scale-105 hover:bg-zinc-950 hover:shadow-2xl w-full ">
+          {/* Card Header */}
+          <div className="flex justify-center">
+            <h5 className="text-xl md:text-2xl font-bold text-yellow-400 uppercase p-2 rounded-md text-center shadow-md">
+              {name}
+            </h5>
           </div>
-        </Link>
-      </div>
-    </>
+
+          {/* Image Section */}
+          <div className="overflow-hidden rounded-xl">
+            <img
+              src={image}
+              alt="database not found"
+              className="object-cover w-full h-60 md:h-72"
+            />
+          </div>
+
+          {/* Language Badges and Date */}
+          <div className="flex flex-wrap justify-between items-center mt-2">
+            <div className="flex flex-wrap gap-1">
+              {[lang1, lang2, lang3, lang4].map((lang, index) => (
+                <p
+                  key={index}
+                  className="bg-slate-700 text-sm md:text-base text-white p-1 rounded-md"
+                >
+                  {lang}
+                </p>
+              ))}
+            </div>
+            <p className="text-white font-mono text-sm md:text-base">
+              Completed on: {date}
+            </p>
+          </div>
+        </div>
+      </Link>
+    </div>
   );
 };
 

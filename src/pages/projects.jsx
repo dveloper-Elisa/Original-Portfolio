@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import projectArray from "../data/data";
 import Card from "../componets/cardDevision";
 
-const Project = (pros) => {
+const Project = () => {
   const [project, setProject] = useState([]);
 
   useEffect(() => {
@@ -10,11 +10,11 @@ const Project = (pros) => {
   }, []);
 
   return (
-    <>
+    <div id="projects" className="bg-zinc-800">
+      <div className="text-center mx-5 bg-slate-800 p-5 rounded-lg my-10"> <p className="font-bold tracking-wider text-[1.5rem]">Potfolio Project</p></div>
       <div
-        className={`grid grid-cols-1 items-center md:grid-cols-2 ${
-          pros.darkmode ? "bg-slate-900" : "bg-slate-200"
-        }  lg:grid-cols-2 px-16 gap-5 py-5`}
+        className={`grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3 
+          "bg-slate-900" gap-2`}
       >
         {project.map((proj) => {
           return (
@@ -33,7 +33,7 @@ const Project = (pros) => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

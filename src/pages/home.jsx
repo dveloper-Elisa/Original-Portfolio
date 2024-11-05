@@ -1,66 +1,72 @@
-import Batton from "../componets/button";
 import { Link } from "react-router-dom";
+import About from "./aboutme";
+import Project from "./projects";
 
-let color = "bg-blue-600";
-let color1 = "bg-gray-400";
-let contact = "Get my cv";
-let contact1 = "About me";
 
-const Home = (pros) => {
+const Home = () => {
   return (
-    <>
-      <div
-        className={`flex flex-col lg:flex-row md:flex-row
-        justify-between
-        sm:flex-col ${pros.darkmode ? "bg-slate-900" : "bg-slate-200"}  px-16 ${
-          pros.colors
-        }`}
-      >
-        <div className="flex flex-col text-center gap-5">
-          <p className="text-[2rem] lg:text-[5rem] md:text-[5rem] smd:text-[2rem]  text-blue-600 font-serif">
-            <span className="font-serif font-thin text-[1rem] lg:text-[3rem] md:text-[3rem] smd:text-[1rem] ">
-              This is
-            </span>
-            <br />
-            Kwizera ELisa
-          </p>
-          <p className="text-4xl first-letter:uppercase font-serif text-center animate-pulse capitalize lg:text-[5xl] md:text-[5xl] sm:text-[2xl] ">
-            a full stack Web developer
-          </p>
-          <div className=" font-serif tracking-wider first-letter:uppercase">
-            i am specialised in different programming languages <br />I have
-            turned into fullstack web developer
+    <div className="bg-zinc-950">
+      <div className="flex flex-col items-center min-h-screen w-full px-5 justify-evenly bg-slate-900 text-white">
+        
+        {/* Hero Section */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 w-full lg:px-[10%]">
+          
+          {/* Right Section */}
+          <div className="text-center md:text-left w-full md:w-1/3 px-4">
+            <h2 className="text-2xl md:text-4xl font-semibold">I'm</h2>
+            <h1 className="text-3xl md:text-5xl font-extrabold mb-3">Elisa Kwizera</h1>
+            <hr className="w-1/2 h-1 bg-yellow-500 mb-4 mx-auto md:mx-0" />
+            <p className="max-w-lg text-lg leading-relaxed">
+              A full-stack Developer specializing in mobile and web applications, with over 3 years of experience in UI/UX design and progressive web applications.
+            </p>
           </div>
-
-          <div className="flex flex-col lg:flex-row md:flex-row sm:flex-col justify-around gap-3">
-            <Link
-              to="https://drive.google.com/file/d/1TKin6dqhYlr4A65zwXYlof4qNtbAtPE-/view?usp=sharing"
-              target="_blank"
-            >
-              <Batton color={color} contact={contact} />
-            </Link>
-            <Link to="/about">
-              <Batton color={color1} contact={contact1} />
-            </Link>
-            <Link to="https://github.com/dveloper-Elisa" target="_blank">
-              <i className="fa fa-github-square text-[40px]"></i>
-            </Link>
-          </div>
-        </div>
-
-        {/* image devission */}
-
-        <div className="flex flex-col items-center mr-11 py-4 transition-all duration-1000 animate-spin-custom hover:scale-105">
-          <picture>
+          
+          {/* Center Section */}
+          <div className="relative w-full md:w-1/3 flex justify-center">
             <img
-              src="./righted_position-removebg-preview.png"
-              alt="image not found"
-              className=" max-w-[28vw] border border-blue-300 shadow-2xl z-0 rounded-full"
+              src="./resized.png"
+              alt="Elisa Kwizera"
+              className="w-40 md:w-56 lg:w-64 rounded-full border-4 border-yellow-500"
             />
-          </picture>
+          </div>
+          
+          {/* Left Section (Social Links) */}
+          <div className="text-center md:text-left w-full md:w-1/3 px-4">
+            <h3 className="font-light text-lg mb-3">Our Services</h3>
+            <p className="mb-5 text-left max-w-[20rem] mx-auto md:mx-0">
+              Crafting high-quality, innovative software solutions designed to enhance your experience and drive meaningful impact.
+            </p>
+            <div className="flex gap-4 justify-center md:justify-start">
+              {[
+                { href: "https://web.facebook.com/kwizera.elissa.14", icon: "fa-facebook" },
+                { href: "https://x.com/KwizersE", icon: "fa-twitter" },
+                { href: "https://www.instagram.com/kwizeraelissa369/", icon: "fa-instagram" },
+                { href: "https://wa.me/250787647168", icon: "fa-whatsapp" }
+              ].map(({ href, icon }, idx) => (
+                <Link key={idx} to={href} target="_blank">
+                  <i className={`fa ${icon} text-yellow-500 rounded-full bg-slate-500 p-4 w-10 h-10 flex items-center justify-center hover:bg-slate-600 transition`}></i>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
+
+        {/* Project Logos Section */}
+        <div className="flex items-center justify-center w-full bg-slate-800 p-5 rounded-lg my-10">
+          <div className="grid grid-cols-3 gap-5 w-full max-w-md sm:max-w-lg md:max-w-3xl">
+            {["Picture1.png", "download.jpeg", "qt=q_95.webp"].map((src, idx) => (
+              <div key={idx} className="bg-slate-600 p-2 rounded-md">
+                <img src={`./${src}`} alt="Project logo" className="w-20 h-auto mx-auto" />
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
-    </>
+        {/* What I Can Do Section */}
+        <About />
+        <Project />
+    </div>
   );
 };
 
