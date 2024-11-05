@@ -1,5 +1,20 @@
 const projectArray = [
   {
+    image: "kabilacoffee.rw_.png",
+    lang1: "MongoDB",
+    lang2: "React.js",
+    lang3: "NodeJs",
+    lang4: "tailwindcss",
+    name: "Coffee Production",
+    date:
+      new Date().getFullYear() +
+      ":0" +
+      new Date().getMonth() +
+      ":" +
+      new Date().getDate(),
+    link: "https://kabilacoffee.rw/",
+  },
+  {
     image: "carshping.PNG",
     lang1: "html",
     lang2: "React.js",

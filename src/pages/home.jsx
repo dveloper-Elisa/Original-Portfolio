@@ -1,118 +1,72 @@
-import Batton from "../componets/button";
 import { Link } from "react-router-dom";
 import About from "./aboutme";
+import Project from "./projects";
+
 
 const Home = () => {
   return (
-    <>
-    <div className="flex flex-col items-center h-screen w-full justify-evenly">
-      <div className="flex items-center w-[63rem] justify-between">
-        {/* RIGHT SECTION */}
-        <div className="w-1/3">
-          <div>
-            <p className="">
-              <p className="text-[2rem]">I'm </p>
-              <br />
-              <p className="font-extrabold text-[2.5rem] mb-5">Elisa Kwizera</p>
-            </p>
-            <hr className="w-1/2 h-[5px] border-none bg-yellow-500" />
-            <p className="flex-wrap mt-5 line-clamp-10">
-              A full-stack Developer, who developes mobile application, web
-              application, and progressive web apllication. desigin UI,UX, with
-              more than 3years of experience
-            </p>
-          </div>
-        </div>
-
-        {/* CENTER SECTION */}
-        <div className="absolute left-[31.5rem]">
-          <img
-            src="./resized.png"
-            alt="welcome profile"
-            className="w-[30rem] rounded-full z-50"
-          />
-        </div>
-
-        {/* LEFT SECTION */}
-        <div className="w-1/3">
-          <div>
-            <p className="font-light text-lg mb-5">Services</p>
-            <p>
-              We build qualited products with software development, to make our
-              cutomers smile
-            </p>
-
-            <p className="flex items-center justify-evenly mt-5">
-              <Link
-                to={"https://web.facebook.com/kwizera.elissa.14"}
-                target="_blank"
-                className=""
-              >
-                <i className="fa fa-facebook text-yellow-500 rounded-full bg-slate-500 p-4 w-5 h-5 flex items-center justify-center">
-                  {" "}
-                </i>
-              </Link>
-              <Link to={"https://x.com/KwizersE"} target="_blank" className="">
-                <i className="fa fa-twitter text-yellow-500 rounded-full bg-slate-500 p-4 w-5 h-5 flex items-center justify-center">
-                  {" "}
-                </i>
-              </Link>
-              <Link
-                to={"https://www.instagram.com/kwizeraelissa369/"}
-                target="_blank"
-                className=""
-              >
-                <i className="fa fa-instagram text-yellow-500 rounded-full bg-slate-500 p-4 w-5 h-5 flex items-center justify-center">
-                  {" "}
-                </i>
-              </Link>
-              <Link
-                to={"https://wa.me/250787647168"}
-                target="_blank"
-                className=""
-              >
-                <i className="fa fa-whatsapp text-yellow-500 rounded-full bg-slate-500 p-4 w-5 h-5 flex items-center justify-center">
-                  {" "}
-                </i>
-              </Link>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="w-[63rem] bg-slate-800 p-5">
-        <div className="flex items-center justify-between gap-5">
-          <div className="rounded-sm bg-slate-600 p-2">
-            <img src="./Picture1.png" alt="Tyaza limted" className="w-20" />
-          </div>
-          <div className="rounded-sm bg-slate-600 p-2">
-            <img src="./download.jpeg" alt="Tyaza limted" className="w-20 h-6" />
-          </div>
-          <div className="rounded-sm bg-slate-600 p-2">
-            <img src="./qt=q_95.webp" alt="Tyaza limted" className="w-20 h-6" />
-          </div>
-        </div>
+    <div className="bg-zinc-950">
+      <div className="flex flex-col items-center min-h-screen w-full px-5 justify-evenly bg-slate-900 text-white">
         
+        {/* Hero Section */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10 w-full lg:px-[10%]">
+          
+          {/* Right Section */}
+          <div className="text-center md:text-left w-full md:w-1/3 px-4">
+            <h2 className="text-2xl md:text-4xl font-semibold">I'm</h2>
+            <h1 className="text-3xl md:text-5xl font-extrabold mb-3">Elisa Kwizera</h1>
+            <hr className="w-1/2 h-1 bg-yellow-500 mb-4 mx-auto md:mx-0" />
+            <p className="max-w-lg text-lg leading-relaxed">
+              A full-stack Developer specializing in mobile and web applications, with over 3 years of experience in UI/UX design and progressive web applications.
+            </p>
+          </div>
+          
+          {/* Center Section */}
+          <div className="relative w-full md:w-1/3 flex justify-center">
+            <img
+              src="./resized.png"
+              alt="Elisa Kwizera"
+              className="w-40 md:w-56 lg:w-64 rounded-full border-4 border-yellow-500"
+            />
+          </div>
+          
+          {/* Left Section (Social Links) */}
+          <div className="text-center md:text-left w-full md:w-1/3 px-4">
+            <h3 className="font-light text-lg mb-3">Our Services</h3>
+            <p className="mb-5 text-left max-w-[20rem] mx-auto md:mx-0">
+              Crafting high-quality, innovative software solutions designed to enhance your experience and drive meaningful impact.
+            </p>
+            <div className="flex gap-4 justify-center md:justify-start">
+              {[
+                { href: "https://web.facebook.com/kwizera.elissa.14", icon: "fa-facebook" },
+                { href: "https://x.com/KwizersE", icon: "fa-twitter" },
+                { href: "https://www.instagram.com/kwizeraelissa369/", icon: "fa-instagram" },
+                { href: "https://wa.me/250787647168", icon: "fa-whatsapp" }
+              ].map(({ href, icon }, idx) => (
+                <Link key={idx} to={href} target="_blank">
+                  <i className={`fa ${icon} text-yellow-500 rounded-full bg-slate-500 p-4 w-10 h-10 flex items-center justify-center hover:bg-slate-600 transition`}></i>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Project Logos Section */}
+        <div className="flex items-center justify-center w-full bg-slate-800 p-5 rounded-lg my-10">
+          <div className="grid grid-cols-3 gap-5 w-full max-w-md sm:max-w-lg md:max-w-3xl">
+            {["Picture1.png", "download.jpeg", "qt=q_95.webp"].map((src, idx) => (
+              <div key={idx} className="bg-slate-600 p-2 rounded-md">
+                <img src={`./${src}`} alt="Project logo" className="w-20 h-auto mx-auto" />
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
+        {/* What I Can Do Section */}
+        <About />
+        <Project />
     </div>
-
-
-    {/* WHAT I DO */}
-
-    <div className="flex items-center w-[63rem]">
-
-      <div>
-
-
-      </div>
-
-      {/* secodn div */}
-      <div>
-        
-      </div>
-
-    </div>
-    </>
   );
 };
 

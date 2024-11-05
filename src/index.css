@@ -14,3 +14,7 @@
 .animate-spin-custom {
   animation: spin infinite 10s;
 }
+
+#root{
+  background-color: rgba(14, 13, 13, 0.63);
+}

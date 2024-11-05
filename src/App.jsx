@@ -8,44 +8,35 @@ import Skillcomponent from "./componets/skills";
 import Certificates from "./pages/certificatePage";
 import Footer from "./componets/footer";
 import Notfound from "./pages/pagenotfound";
-import { useState } from "react";
 
 function App() {
-  const [darkmode, setDarkMode] = useState(true);
-  const toggleDarkMode = () => {
-    setDarkMode(!darkmode);
-  };
-  let color = darkmode ? "bg-gray-800" : "bg-gray-400 ";
   return (
     <div
-      className={`${
-        darkmode
-          ? "bg-slate-900 p-2 gap-3  text-white ring-slate-900/5 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 shadow-2xl"
-          : "bg-gray-400 gap-3 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 p-0"
+      className={` "bg-slate-900 p-2 gap-3  text-white ring-slate-900/5 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 shadow-2xl"
+          : "bg-gray-400 p-0"
       }`}
     >
-    
-      <Navigation color={color} />
+      <Navigation/>
       <Routes>
-        <Route path="/" element={<Home darkmode={darkmode} colors={color} />} />
+        <Route path="/" element={<Home/>} />
 
-        {/* <Route path="/about" element={<About darkmode={darkmode} />} /> */}
-        <Route
+        {/* <Route path="/about" element={<About />} /> */}
+        {/* <Route
           path="/projects"
-          element={<Project darkmode={darkmode} color={color} />}
-        />
+          element={<Project/>}
+        /> */}
         <Route
           path="/skills"
-          element={<Skillcomponent darkmode={darkmode} />}
+          element={<Skillcomponent />}
         />
-        <Route path="/contact" element={<ContactForm darkmode={darkmode} />} />
+        <Route path="/contact" element={<ContactForm />} />
         <Route
           path="/certificates"
-          element={<Certificates darkmode={darkmode} />}
+          element={<Certificates />}
         />
         <Route path="/*" element={<Notfound />} />
       </Routes>
-      <Footer darkmode={darkmode} />
+      <Footer />
     </div>
   );
 }

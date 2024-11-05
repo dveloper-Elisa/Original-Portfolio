@@ -7,113 +7,113 @@ const Navigation = () => {
   return (
     <>
       <div
-        className={`flex flex-row items-center justify-evenly sticky bg-blend-darken shadow-xl top-0 z-10 max-w-[100vw]`}
+        className="flex items-center justify-between sticky bg-blend-darken shadow-xl top-0 z-10 max-w-[100vw] p-4 bg-gray-800"
       >
-        <div className="flex items-center justify-between gap-10">
-          {/* <img src="./logo.png" alt="Logo Not found" className="w-[4rem] " /> */}
-          <div><p className="font-bold font-sans p-[1rem]"> <i className="fa fa-file-picture-o"></i> Elisa Developer</p></div>
+        {/* Logo and Title */}
+        <div className="flex items-center">
+          <p className="font-bold font-sans text-white p-2 text-2xl">
+            <i className="fa fa-file-picture-o"></i> Elisa Developer
+          </p>
+        </div>
 
-          <div>
-          <nav
-          className={`flex flex-col lg:flex-row md:flex md:flex-row justify-end w-fit font-light`}
-        >
+        {/* Hamburger and Close Icons */}
+        <nav className="flex items-center">
           <i
-            className={`border text-[20px] w-fit p-1 fa cursor-pointer fa-close ${
-              isclosed ? "hidden" : "mx-16 block w-fi"
+            className={`text-[20px] p-1 fa cursor-pointer fa-close ${
+              isclosed ? "hidden" : "block"
             }`}
-            onClick={() => {
-              setIsclosed(true);
-            }}
+            onClick={() => setIsclosed(true)}
           ></i>
           <i
-            className={`border text-[20px] w-fit p-1 fa cursor-pointer fa-bars md:hidden lg:hidden ${
-              isclosed ? " mx-16 block w-fit  top-0" : "hidden"
+            className={`text-[20px] p-1 fa cursor-pointer fa-bars md:hidden ${
+              isclosed ? "block" : "hidden"
             }`}
-            onClick={() => {
-              setIsclosed(false);
-            }}
+            onClick={() => setIsclosed(false)}
           ></i>
+
+          {/* Navigation Links */}
           <ul
             className={`md:flex text-white md:flex-row md:gap-5 ${
               isclosed
                 ? "hidden"
-                : "flex flex-col gap-5 h-screen w-[80%] mx-16 bg-slate-600 p-1 md:bg-slate-400 absolute -left-16 top-16"
+                : "flex flex-col gap-5 h-screen w-[80%] mx-16 bg-slate-600 p-4 absolute top-16 left-0"
             }`}
           >
             <Link
               to="/"
-              onClick={() => {
-                setIsclosed(true);
-              }}
+              onClick={() => setIsclosed(true)}
+              className="text-[18px] first-letter:uppercase hover:transition hover:duration-500"
             >
-              <li className="text-[18px] first-letter:uppercase  hover:transition hover:duration-500 ">
-                Home
-              </li>
+              <li>Home</li>
             </Link>
-
             <Link
               to="/certificates"
-              onClick={() => {
-                setIsclosed(true);
-              }}
+              onClick={() => setIsclosed(true)}
+              className="text-[18px] first-letter:uppercase hover:text-yellow-500 hover:transition hover:duration-500"
             >
-              <li className="text-[18px] first-letter:uppercase hover:text-white hover:transition hover:duration-500 hover:">
-                Certificates
-              </li>
+              <li>Certificates</li>
             </Link>
-
-            <Link
-              to="/projects"
-              onClick={() => {
-                setIsclosed(true);
-              }}
+            <a
+              href="#projects"
+              onClick={() => setIsclosed(true)}
+              className="text-[18px] first-letter:uppercase hover:text-yellow-500 hover:transition hover:duration-500"
             >
-              <li className="text-[18px] first-letter:uppercase hover:text-white hover:transition hover:duration-500 hover:">
-                Projects
-              </li>
-            </Link>
-
+              <li>Projects</li>
+            </a>
             <Link
               to="/skills"
-              onClick={() => {
-                setIsclosed(true);
-              }}
+              onClick={() => setIsclosed(true)}
+              className="text-[18px] first-letter:uppercase hover:text-yellow-500 hover:transition hover:duration-500"
             >
-              <li className="text-[18px] first-letter:uppercase hover:text-white hover:transition hover:duration-500 hover:">
-                Skills
-              </li>
+              <li>Skills</li>
             </Link>
-
             <a
               href="#about"
-              onClick={() => {
-                setIsclosed(true);
-              }}
+              onClick={() => setIsclosed(true)}
+              className="text-[18px] first-letter:uppercase hover:text-yellow-500 hover:transition hover:duration-500"
             >
-              <li className="text-[18px] first-letter:uppercase hover:text-white hover:transition hover:duration-500 hover:">
-                About Me
-              </li>
+              <li>About Me</li>
             </a>
-
             <Link
               to="/contact"
-              onClick={() => {
-                setIsclosed(true);
-              }}
+              onClick={() => setIsclosed(true)}
+              className="text-[18px] first-letter:uppercase hover:text-yellow-500 hover:transition hover:duration-500"
             >
-              <li className="first-letter:uppercase hover:text-white hover:transition hover:duration-500 text-[18px]">
-                Contact
-              </li>
+              <li>Contact</li>
             </Link>
+
+            {/* Duplicate Social Links for Mobile Menu */}
+            <div className={`flex gap-4 mt-4 ${isclosed ? "hidden" : "flex md:hidden"}`}>
+              <Link
+                to={"https://www.linkedin.com/in/kwizera-elissa-640448224/"}
+                target="_blank"
+              >
+                <i className="fa fa-linkedin text-yellow-500 text-2xl"></i>
+              </Link>
+              <Link to={"https://github.com/dveloper-Elisa"} target="_blank">
+                <i className="fa fa-github text-yellow-500 text-2xl"></i>
+              </Link>
+              <Link to={"mailto:kwizeraelisa77@gmail.com"} target="_blank">
+                <i className="fa fa-envelope-o text-yellow-500 text-2xl"></i>
+              </Link>
+            </div>
           </ul>
-          </nav>
-          </div>
-        </div>
-        <div className="flex items-center gap-10">
-          <Link to={"https://www.linkedin.com/in/kwizera-elissa-640448224/"} target="_blank"><i className="fa fa-linkedin text-yellow-500"></i></Link> 
-          <Link to={"https://github.com/dveloper-Elisa"} target="_blank"><i className="fa fa-github text-yellow-500"></i></Link>
-          <Link to={"mailto:kwizeraelisa77@gmail.com"} target="_blank"><i className="fa fa-envelope-o text-yellow-500"></i></Link>
-          
+        </nav>
+
+        {/* Social Links for Larger Screens */}
+        <div className="hidden md:flex gap-4">
+          <Link
+            to={"https://www.linkedin.com/in/kwizera-elissa-640448224/"}
+            target="_blank"
+          >
+            <i className="fa fa-linkedin text-yellow-500 text-2xl"></i>
+          </Link>
+          <Link to={"https://github.com/dveloper-Elisa"} target="_blank">
+            <i className="fa fa-github text-yellow-500 text-2xl"></i>
+          </Link>
+          <Link to={"mailto:kwizeraelisa77@gmail.com"} target="_blank">
+            <i className="fa fa-envelope-o text-yellow-500 text-2xl"></i>
+          </Link>
         </div>
       </div>
     </>
