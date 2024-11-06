@@ -24,7 +24,7 @@ const Home = () => {
           </div>
           
           {/* Center Section */}
-          <div className="relative w-full md:w-1/3 flex justify-center">
+          <div className="w-full md:w-1/3 flex justify-center">
             <img
               src="./resized.png"
               alt="Elisa Kwizera"

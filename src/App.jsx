@@ -7,9 +7,8 @@ import Notfound from "./pages/pagenotfound";
 function App() {
   return (
     <div
-      className={` "bg-slate-900 p-2 gap-3  text-white ring-slate-900/5 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 shadow-2xl"
-          : "bg-gray-400 p-0"
-      }`}
+      className={"bg-slate-900 gap-3  text-white ring-slate-900/5 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 shadow-2xl p-0"
+      }
     >
       <Navigation/>
       <Routes>

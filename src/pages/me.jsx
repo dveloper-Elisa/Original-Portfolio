@@ -4,9 +4,9 @@ const Me = () => {
   return (
     <div className="flex flex-col items-center gap-10 w-full p-5 bg-slate-950 text-white">
       {/* First Section */}
-      <div className="flex flex-col items-center justify-center gap-5 w-full sm:flex-col md:flex-row lg:flex-row lg:w-1/2 md:w-1/2 m-5">
+      <div className="flex flex-col items-center justify-center gap-5 w-full sm:flex-col md:flex-row lg:flex-row lg:w-[80%] md:w-[80%] m-5">
         {/* Image Section */}
-        <div className="w-[50%] sm:w-full md:w-1/2 lg:w-1/2">
+        <div className="w-[80%] sm:w-full md:w-1/2 lg:w-1/2">
           <img src="./me.jpeg" alt="Me" className="w-full rounded-lg shadow-lg" />
         </div>
 
@@ -27,7 +27,7 @@ const Me = () => {
       </div>
 
       {/* Second Section */}
-      <div className="flex flex-col items-center justify-center gap-5 w-full sm:flex-col md:flex-row lg:flex-row lg:w-1/2 md:w-1/2 m-5">
+      <div className="flex flex-col items-center justify-center gap-5 w-full sm:flex-col md:flex-row lg:flex-row lg:w-[80%] md:w-[80%] m-5">
         {/* Text Section */}
         <div className="w-full flex flex-col gap-5">
           <i className="fa fa-quote-left text-[3rem] text-yellow-500"></i>

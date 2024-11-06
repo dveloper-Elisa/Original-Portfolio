@@ -1,8 +1,8 @@
 const About = () => {
   return (
     <>
-      <div id="about" className="mx-5 py-10">
-        <div className="flex flex-col lg:flex-row items-start gap-10 w-full px-5 lg:px-0">
+      <div id="about" className="mx-5 py-10 flex flex-col items-center">
+        <div className="flex flex-col lg:flex-row items-start gap-10 w-[80%] px-5 lg:px-0">
           {/* Left Column */}
           <div className="flex flex-col gap-5 w-full lg:w-1/2">
             <h2 className="text-3xl font-extrabold">What I Can Do for You</h2>
