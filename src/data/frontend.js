@@ -1,27 +1,27 @@
 const SkillsFront = [
   {
-    image: "html.png",
-    content: "i learn html",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+    content: "HTML5",
   },
   {
-    image: "reactdownload.png",
+    image: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
     content: "React.js",
   },
   {
-    image: "bootstrap.png",
-    content: "bootstrap css",
+    image: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
+    content: "BootstrapCss",
   },
   {
-    image: "jascript.png",
-    content: "javascript.js",
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    content: "JavaScript",
   },
   {
-    image: "css.png",
-    content: "making good design for html",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+    content: "CSS",
   },
   {
-    image: "tailwind.png",
-    content: "tailwind. a frame work of css",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+    content: "tailwindCss",
   },
 ];
 

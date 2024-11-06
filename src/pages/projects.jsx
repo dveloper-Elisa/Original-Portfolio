@@ -10,11 +10,12 @@ const Project = () => {
   }, []);
 
   return (
-    <div id="projects" className="bg-zinc-800">
-      <div className="text-center mx-5 bg-slate-800 p-5 rounded-lg my-10"> <p className="font-bold tracking-wider text-[1.5rem]">Potfolio Project</p></div>
+    <div id="projects" className="bg-slate-800">
+      <div className="text-center mx-5 bg-zinc-900 p-5 rounded-lg my-10"> 
+        <p className="font-bold tracking-wider text-[1.5rem]">Potfolio Project</p></div>
       <div
         className={`grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3 
-          "bg-slate-900" gap-2`}
+          "bg-slate-900"`}
       >
         {project.map((proj) => {
           return (

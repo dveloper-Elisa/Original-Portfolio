@@ -12,7 +12,7 @@ const Navigation = () => {
         {/* Logo and Title */}
         <div className="flex items-center">
           <p className="font-bold font-sans text-white p-2 text-2xl">
-            <i className="fa fa-file-picture-o"></i> Elisa Developer
+            <i className="fa fa-file-picture-o text-yellow-900"></i> Elisa Developer
           </p>
         </div>
 
@@ -46,13 +46,6 @@ const Navigation = () => {
             >
               <li>Home</li>
             </Link>
-            <Link
-              to="/certificates"
-              onClick={() => setIsclosed(true)}
-              className="text-[18px] first-letter:uppercase hover:text-yellow-500 hover:transition hover:duration-500"
-            >
-              <li>Certificates</li>
-            </Link>
             <a
               href="#projects"
               onClick={() => setIsclosed(true)}
@@ -60,13 +53,13 @@ const Navigation = () => {
             >
               <li>Projects</li>
             </a>
-            <Link
-              to="/skills"
+            <a
+              href="#skills"
               onClick={() => setIsclosed(true)}
               className="text-[18px] first-letter:uppercase hover:text-yellow-500 hover:transition hover:duration-500"
             >
               <li>Skills</li>
-            </Link>
+            </a>
             <a
               href="#about"
               onClick={() => setIsclosed(true)}
@@ -74,13 +67,6 @@ const Navigation = () => {
             >
               <li>About Me</li>
             </a>
-            <Link
-              to="/contact"
-              onClick={() => setIsclosed(true)}
-              className="text-[18px] first-letter:uppercase hover:text-yellow-500 hover:transition hover:duration-500"
-            >
-              <li>Contact</li>
-            </Link>
 
             {/* Duplicate Social Links for Mobile Menu */}
             <div className={`flex gap-4 mt-4 ${isclosed ? "hidden" : "flex md:hidden"}`}>

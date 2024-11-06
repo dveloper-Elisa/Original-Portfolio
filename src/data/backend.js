@@ -1,27 +1,31 @@
 const SkillsBack = [
   {
-    image: "java.png",
-    content: "java Programming",
+    image: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
+    content: "Java",
   },
   {
     image: "jsp.png",
-    content: "java server page",
+    content: "JSP",
   },
   {
-    image: "mysql.png",
-    content: "mysql language DB",
+    image: "https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg",
+    content: "MySQL",
   },
   {
-    image: "nodejs.png",
-    content: "backend with NodeJS",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+    content: "NodeJS",
   },
   {
-    image: "php.png",
-    content: "PHP language",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
+    content: "PHP",
   },
   {
-    image: "prisma.png",
-    content: "relational mapping",
+    image: "https://cdn.prod.website-files.com/65166126ca18241731aa26d2/65166127ca18241731aa3019_1.webp",
+    content: "Python",
+  },
+  {
+    image: "https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png",
+    content: "ORM",
   },
 ];
 

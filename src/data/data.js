@@ -15,18 +15,19 @@ const projectArray = [
     link: "https://kabilacoffee.rw/",
   },
   {
-    image: "carshping.PNG",
+    image: "https://www.uwu.ac.lk/wp-content/uploads/fMpslider.jpg",
     lang1: "html",
-    lang2: "React.js",
-    lang3: "TailwindCSS",
-    name: "Car_shoping",
+    lang2: "CSS",
+    lang3: "PHP",
+    lang4: "MySQL",
+    name: "Lecture_Pro",
     date:
       new Date().getFullYear() +
       ":0" +
       new Date().getMonth() +
       ":" +
       new Date().getDate(),
-    link: "https://shoping-car-web-in-react-ceyzeb5tc-elisa-kwizeras-projects.vercel.app",
+    link: "https://github.com/dveloper-Elisa/lecturePro",
   },
   {
     image: "studyhub.png",
@@ -44,22 +45,7 @@ const projectArray = [
     link: "https://studyhubfree.netlify.app/",
   },
   {
-    image: "alison.PNG",
-    lang1: "html",
-    lang2: "React.js",
-    lang3: "TailwindCSS",
-    name: "Landing Page",
-    date:
-      new Date().getFullYear() +
-      ":0" +
-      new Date().getMonth() +
-      ":" +
-      new Date().getDate(),
-    link: "https://landing-page-allison-jv92.vercel.app/",
-  },
-
-  {
-    image: "film-removebg-preview.png",
+    image: "https://rlterryreelview.com/wp-content/uploads/2017/06/ww.jpg",
     lang1: "html",
     lang2: "React.js",
     lang3: "TailwindCSS",
@@ -73,25 +59,26 @@ const projectArray = [
     link: "https://play-films-h1hsbsmhc-elisa-kwizeras-projects.vercel.app",
   },
   {
-    image: "rockgame.png",
-    lang1: "html",
-    lang2: "css",
-    lang3: "VanellaJS",
-    name: "Rock, paper, and scissor game",
+    image: "https://m.bbb.org/prod/corecmsimages/03e136d8-c7c8-4fd8-be3e-876d90d00b58.jpg",
+    lang1: "React.tsx",
+    lang2: "TailwindCss",
+    lang3: "Express",
+    lang4: "MongoDB",
+    name: "E_hotel Booking",
     date:
       new Date().getFullYear() +
       ":0" +
       new Date().getMonth() +
       ":" +
       new Date().getDate(),
-    link: "https://rock-paper-scissor-lztfiy1j7-elisa-kwizeras-projects.vercel.app",
+    link: "https://github.com/dveloper-Elisa/e-booking",
   },
   {
     image: "car.PNG",
     lang1: "html",
     lang2: "css",
     lang3: "VanellaJS",
-    name: "web car shop",
+    name: "Car_shpping",
     date:
       new Date().getFullYear() +
       ":0" +
