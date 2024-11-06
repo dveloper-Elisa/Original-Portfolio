@@ -12,7 +12,8 @@ const Skillcomponent = () => {
   }, []); // Only run once on mount
 
   return (
-    <div className="bg-slate-900 text-white py-10 px-4 md:px-16" id="skills">
+    <div className="bg-slate-900 text-white py-10 px-4 md:px-16 w-full flex flex-col items-center justify-center" id="skills">
+      <div className="flex flex-col items-center justify-center w-[80%]">
       {/* Header */}
       <div className="text-center border-b border-slate-700 pb-5 mb-8">
         <p className="text-lg md:text-2xl font-semibold">
@@ -21,11 +22,11 @@ const Skillcomponent = () => {
       </div>
 
       {/* Front End Skills Section */}
-      <div className="py-5">
+      <div className="py-5 flex flex-col items-center justify-center">
         <h3 className="text-2xl md:text-3xl text-yellow-500 font-mono text-center mb-6">
           Front-End Skills
         </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-5 justify-between ">
           {frontend.map((frontEnd, index) => (
             <div
               className="flex flex-col items-center p-4 bg-slate-800 rounded-xl shadow-lg hover:scale-105 transform transition duration-300"
@@ -49,7 +50,7 @@ const Skillcomponent = () => {
         <h3 className="text-2xl md:text-3xl text-yellow-500 font-mono text-center mb-6">
           Back-End Skills
         </h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-5 w-full">
           {backend.map((backEnd, index) => (
             <div
               className="flex flex-col items-center p-4 bg-slate-800 rounded-xl shadow-lg hover:scale-105 transform transition duration-300"
@@ -66,6 +67,7 @@ const Skillcomponent = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </div>
   );

@@ -5,10 +5,11 @@ const Navigation = () => {
   const [isclosed, setIsclosed] = useState(true);
 
   return (
-    <>
+    // <>
       <div
-        className="flex items-center justify-between sticky bg-blend-darken shadow-xl top-0 z-10 max-w-[100vw] p-4 bg-gray-800"
+        className="flex items-center justify-center sticky bg-blend-darken shadow-xl top-0 z-10 max-w-full p-4 bg-gray-800"
       >
+      <div className="flex items-center justify-between w-[80%] bg-gray-800">
         {/* Logo and Title */}
         <div className="flex items-center">
           <p className="font-bold font-sans text-white p-2 text-2xl">
@@ -102,7 +103,8 @@ const Navigation = () => {
           </Link>
         </div>
       </div>
-    </>
+      </div>
+    // </>
   );
 };
 
