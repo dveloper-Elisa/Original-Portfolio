@@ -1,75 +1,56 @@
 import { Link } from "react-router-dom";
 
-const Footer = (pros) => {
+const Footer = () => {
   return (
-    <>
-      <div
-        className={`grid grid-cols-1 sticky -bottom-30 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 px-16  ${
-          pros.darkmode ? "bg-slate-700" : "bg-slate-600 text-white"
-        }`}
-      >
-        <div className="flex flex-col gap-3 ">
-          <h3>
-            <u>My contact</u>
-          </h3>
-          <p className="fa fa-phone-square mb-5">
-            <p className="absolute top-9 pl-5">+250 787647168</p>
-            <p className="absolute top-14 pl-5">+250 726982830</p>
+    <footer className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 items-center sm:grid-cols-1 gap-10 px-8 py-8 bg-gray-800 text-white">
+      {/* Contact Section */}
+      <div className="flex flex-col gap-3">
+        <h3 className="text-lg font-semibold underline">My Contact</h3>
+        <div>
+          <p className="flex gap-2">
+            <i className="text-yellow-500 font-bold fa fa-phone-square" aria-hidden="true"></i> +250 787 647 168
           </p>
-
-          <Link to="https://github.com/dveloper-Elisa" target="_blank">
-            <i className="fa fa-github-square"> Git Hub</i>
-          </Link>
-          <Link to={`https://wa.me/${+250787647168}`} target="_blank">
-            <i className="fa fa-whatsapp ">Whatsapp</i>
-          </Link>
+          <p className="flex gap-2">
+            <i className="text-yellow-500 font-bold fa fa-phone-square" aria-hidden="true"></i> +250 726 982 830
+          </p>
         </div>
-
-        <div className="flex flex-col gap-3">
-          <h3>
-            <u>My socil Media</u>
-          </h3>
-          <Link
-            to="https://www.linkedin.com/in/kwizera-elissa-640448224/"
-            target="_blank"
-          >
-            <p className="">
-              <i className="fa fa-linkedin-square"> Linked In</i>
-            </p>
+        <div className="flex flex-col gap-2">
+          <Link to="https://github.com/dveloper-Elisa" target="_blank" className="flex gap-2">
+            <i className="text-yellow-500 font-bold fa fa-github-square" aria-hidden="true"></i> GitHub
           </Link>
-          <Link to="https://twitter.com/home" target="_black">
-            <p className="">
-              <i className="fa fa-twitter-square"> Twitter</i>
-            </p>
-          </Link>
-          <Link to="mailto:kwizeraelisa77@gmail.com" target="_black">
-            <p className="">
-              <i className="fa fa-envelope-square"> Email</i>
-            </p>
-          </Link>
-        </div>
-        <div className="flex flex-col gap-3">
-          <h3>
-            <u>My Quick navigate</u>
-          </h3>
-          <Link to="/about">
-            <p className="">
-              <i className="fa fa-address-book"> About me</i>
-            </p>
-          </Link>
-          <Link to="/skills">
-            <p className="">
-              <i className="fa fa-code-fork"> Skills</i>
-            </p>
-          </Link>
-          <Link to="/contact">
-            <p className="">
-              <i className="fa fa-send"> get in Touch</i>
-            </p>
+          <Link to="https://wa.me/250787647168" target="_blank" className="flex gap-2">
+            <i className="text-yellow-500 font-bold fa fa-whatsapp" aria-hidden="true"></i> WhatsApp
           </Link>
         </div>
       </div>
-    </>
+
+      {/* Social Media Section */}
+      <div className="flex flex-col gap-3">
+        <h3 className="text-lg font-semibold underline">My Social Media</h3>
+        <Link to="https://www.linkedin.com/in/kwizera-elissa-640448224/" target="_blank" className="flex gap-2">
+          <i className="text-yellow-500 font-bold fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+        </Link>
+        <Link to="https://twitter.com/home" target="_blank" className="flex gap-2">
+          <i className="text-yellow-500 font-bold fa fa-twitter-square" aria-hidden="true"></i> Twitter
+        </Link>
+        <Link to="mailto:kwizeraelisa77@gmail.com" target="_blank" className="flex gap-2">
+          <i className="text-yellow-500 font-bold fa fa-envelope-square" aria-hidden="true"></i> <abbr title="kwizeraelisa77@gmail.com">Email</abbr> 
+        </Link>
+      </div>
+
+      {/* Quick Navigation Section */}
+      <div className="flex flex-col gap-3">
+        <h3 className="text-lg font-semibold">Get in Touch</h3>
+        <p>
+          Stay connected with me to learn more about my services and explore how we can work together to create impactful solutions.
+        </p>
+      </div>
+
+      {/* Footer Bottom Section */}
+      <div className="col-span-full mt-8 text-center border-t border-gray-700 pt-4">
+        <p className="text-yellow-500">&copy; 2024 All rights reserved to Elisa</p>
+      </div>
+    </footer>
   );
 };
 

@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import About from "./aboutme";
 import Project from "./projects";
+import Skillcomponent from "../componets/skills";
+import Me from "./me";
 
 
 const Home = () => {
@@ -13,7 +15,7 @@ const Home = () => {
           
           {/* Right Section */}
           <div className="text-center md:text-left w-full md:w-1/3 px-4">
-            <h2 className="text-2xl md:text-4xl font-semibold">I'm</h2>
+            <h2 className="text-2xl md:text-4xl font-semibold">I{`'`}m</h2>
             <h1 className="text-3xl md:text-5xl font-extrabold mb-3">Elisa Kwizera</h1>
             <hr className="w-1/2 h-1 bg-yellow-500 mb-4 mx-auto md:mx-0" />
             <p className="max-w-lg text-lg leading-relaxed">
@@ -26,7 +28,7 @@ const Home = () => {
             <img
               src="./resized.png"
               alt="Elisa Kwizera"
-              className="w-40 md:w-56 lg:w-64 rounded-full border-4 border-yellow-500"
+              className="w-40 md:w-56 lg:w-64 rounded-full border-4 border-yellow-500 translate-x-10 transition-all duration-1000 hover:scale-150 scale-125 inset-y-72 inset-x-11"
             />
           </div>
           
@@ -65,7 +67,9 @@ const Home = () => {
       </div>
         {/* What I Can Do Section */}
         <About />
+        <Me />
         <Project />
+        <Skillcomponent/>
     </div>
   );
 };
