@@ -26,7 +26,8 @@ const Home = () => {
           {/* Center Section */}
           <div className="w-full md:w-1/3 flex justify-center">
             <img
-              src="./resized.png"
+              // src="./resized.png"
+              src="./me1.png"
               alt="Elisa Kwizera"
               className="w-40 md:w-56 lg:w-64 rounded-full border-4 border-yellow-500 translate-x-10 transition-all duration-1000 hover:scale-150 scale-125 inset-y-72 inset-x-11"
             />
@@ -57,7 +58,7 @@ const Home = () => {
         <div className="flex items-center justify-center w-full bg-slate-800 p-5 rounded-lg my-10">
           <div className="grid grid-cols-3 gap-5 w-full max-w-md sm:max-w-lg md:max-w-3xl">
             {["Picture1.png", "download.jpeg", "qt=q_95.webp"].map((src, idx) => (
-              <div key={idx} className="bg-slate-600 p-2 rounded-md">
+              <div key={idx} className="bg-slate-600 p-2 rounded-md flex items-center">
                 <img src={`./${src}`} alt="Project logo" className="w-20 h-auto mx-auto" />
               </div>
             ))}
