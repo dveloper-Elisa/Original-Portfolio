@@ -41,13 +41,13 @@ const Navigation = () => {
                 : "flex flex-col gap-5 h-screen w-[80%] mx-16 bg-slate-600 p-4 absolute top-16 left-0"
             }`}
           >
-            <Link
-              to="/"
+            <a
+              href="#home"
               onClick={() => setIsclosed(true)}
               className="text-[18px] first-letter:uppercase hover:transition hover:duration-500"
             >
               <li>Home</li>
-            </Link>
+            </a>
             <a
               href="#projects"
               onClick={() => setIsclosed(true)}

@@ -31,7 +31,7 @@ const Footer = () => {
         <Link to="https://www.linkedin.com/in/kwizera-elissa-640448224/" target="_blank" className="flex gap-2 items-center">
           <i className="text-yellow-500 font-bold fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn
         </Link>
-        <Link to="https://twitter.com/home" target="_blank" className="flex gap-2 items-center">
+        <Link to="https://x.com/KwizersE" target="_blank" className="flex gap-2 items-center">
           <i className="text-yellow-500 font-bold fa fa-twitter-square" aria-hidden="true"></i> Twitter
         </Link>
         <Link to="mailto:kwizeraelisa77@gmail.com" target="_blank" className="flex gap-2 items-center">

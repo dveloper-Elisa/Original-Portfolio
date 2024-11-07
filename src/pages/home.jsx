@@ -7,7 +7,7 @@ import Me from "./me";
 
 const Home = () => {
   return (
-    <div className="bg-zinc-950">
+    <div className="bg-zinc-950" id="home">
       <div className="flex flex-col items-center min-h-screen w-full px-5 justify-evenly bg-slate-900 text-white">
         
         {/* Hero Section */}
