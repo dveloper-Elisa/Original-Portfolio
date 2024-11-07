@@ -2,7 +2,7 @@ const About = () => {
   return (
     <>
       <div id="about" className="mx-5 py-10 flex flex-col items-center">
-        <div className="flex flex-col lg:flex-row items-start gap-10 w-[80%] px-5 lg:px-0">
+        <div className="flex flex-col lg:flex-row items-start gap-5 lg:w-[80%] md:w-[80%] sm:w-[80%] w-full  px-5 lg:px-0">
           {/* Left Column */}
           <div className="flex flex-col gap-5 w-full lg:w-1/2">
             <h2 className="text-3xl font-extrabold">What I Can Do for You</h2>
@@ -27,7 +27,7 @@ const About = () => {
           </div>
 
           {/* Stacks Section */}
-          <div className="grid grid-cols-1 break-all md:grid-cols-2 gap-5 w-full lg:w-1/2">
+          <div className="grid grid-cols-1 break-all md:grid-cols-2 gap-5 w-full lg:w-1/2 md:w-1/2">
             {[
               {
                 title: "UI/UX Design",
@@ -45,19 +45,19 @@ const About = () => {
                 projects: "2 Projects Designed",
               },
               {
-                title: "Backend Development",
+                title: "Back-End Development",
                 img: "./backendDevelopment.png",
                 projects: "10 Projects Finished",
               },
             ].map(({ title, img, projects }, idx) => (
               <div
                 key={idx}
-                className="flex items-center gap-5 p-4 bg-slate-800 rounded-md shadow-md"
+                className="flex items-center gap-5 p-4 bg-slate-800 rounded-md shadow-md w-full"
               >
                 <img src={img} alt={title} className="w-20 h-auto" />
                 <div>
-                  <h3 className="font-bold text-lg">{title}</h3>
-                  <p className="font-light">{projects}</p>
+                  <h3 className="text-[0.9rem] font-bold text-lg">{title}</h3>
+                  <p className="text-[0.7rem] font-light">{projects}</p>
                 </div>
               </div>
             ))}

@@ -7,13 +7,14 @@ const Navigation = () => {
   return (
     // <>
       <div
-        className="flex items-center justify-center sticky bg-blend-darken shadow-xl top-0 z-10 max-w-full p-4 bg-gray-800"
+        className="flex items-center justify-center sticky bg-blend-darken shadow-xl top-0 z-10 max-w-full bg-gray-800"
       >
       <div className="flex items-center justify-between w-[80%] bg-gray-800">
         {/* Logo and Title */}
         <div className="flex items-center">
-          <p className="font-bold font-sans text-white p-2 text-2xl">
-            <i className="fa fa-file-picture-o text-yellow-900"></i> Elisa Developer
+          <p className="font-bold font-sans text-white p-2 text-2xl flex flex-row items-center">
+            <img src="./resized.png" className="w-7 h-7 rounded-full" alt={<i className="fa fa-file-picture-o text-yellow-900"></i>} />
+             Elisa Developer
           </p>
         </div>
 
