@@ -21,7 +21,7 @@ const Me = () => {
           </p>
           <p className="flex flex-col gap-1">
             <span className="font-bold text-xl">Elisa KWIZERA</span>
-            <span className="font-light text-md">CEO, Tyaza Limited</span>
+            <span className="font-light text-md">Full-Stack Software developer</span>
           </p>
         </div>
       </div>
@@ -40,9 +40,6 @@ const Me = () => {
             <span className="font-bold text-xl">Reach out me via</span>
             <div className="flex gap-4 justify-center md:justify-start break-keep mt-5">
               {[
-                // { href: "https://web.facebook.com/kwizera.elissa.14", icon: "fa-facebook" },
-                // { href: "https://x.com/KwizersE", icon: "fa-twitter" },
-                // { href: "https://www.instagram.com/kwizeraelissa369/", icon: "fa-instagram" },
                 { href: "https://wa.me/250787647168", icon: "fa-whatsapp"},
                 { href: "https://github.com/dveloper-Elisa", icon: "fa-github" },
                 { href: "mailto:kwizeraelisa77@gmail.com", icon: "fa-envelope" },
