@@ -27,6 +27,23 @@ const SkillsBack = [
     image: "https://seeklogo.com/images/P/prisma-logo-3805665B69-seeklogo.com.png",
     content: "ORM",
   },
+  {
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkIyzuKbWXglpMjXFmRqCSJOaRfyswluGasA&s",
+    content: "MongoDB",
+  },
+  {
+    image: "https://pbs.twimg.com/profile_images/1675860982025920515/fQVwLMze_400x400.jpg",
+    content: "MariaDB",
+  },
+  {
+    image: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+    content: "Express.js",
+  },
+  {
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhA7i1BqudUnoRGMGCB8-NaxYo5lAASpFDhQ&s", // Assuming Hono.js logo URL
+    content: "Hono.js",
+  },
 ];
+
 
 export default SkillsBack;
