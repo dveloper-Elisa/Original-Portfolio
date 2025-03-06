@@ -76,7 +76,7 @@ const Home = () => {
             ].map((src, idx) => (
               <div
                 key={idx}
-                className="bg-slate-800 p-2 rounded-md flex items-center"
+                className="bg-slate-800 px-3 py-2 rounded-md flex items-center"
               >
                 <img
                   src={`./${src}`}
