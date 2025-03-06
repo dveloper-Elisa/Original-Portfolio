@@ -14,7 +14,7 @@ const About = () => {
               {[
                 { label: "Projects Completed", count: "10+" },
                 { label: "Remote Contract", count: "2+" },
-                { label: "Years of Experience", count: "3+" },
+                { label: "Years of Experience", count: "4" },
               ].map(({ label, count }, idx) => (
                 <div key={idx} className="text-center">
                   <span className="text-yellow-500 font-bold text-2xl">
@@ -32,7 +32,7 @@ const About = () => {
               {
                 title: "UI/UX Design",
                 img: "./Figma.png",
-                projects: "4 Projects Designed",
+                projects: "5+ Projects Designed",
               },
               {
                 title: "Front-End Development",
@@ -47,7 +47,7 @@ const About = () => {
               {
                 title: "Back-End Development",
                 img: "./backendDevelopment.png",
-                projects: "10 Projects Finished",
+                projects: "10+ Projects Finished",
               },
             ].map(({ title, img, projects }, idx) => (
               <div
@@ -76,8 +76,7 @@ const About = () => {
               </h1>
               <p className="w-full">
                 Building responsive and engaging mobile applications tailored
-                for Android platform, ensuring a smooth user
-                experience.
+                for Android platform, ensuring a smooth user experience.
               </p>
             </div>
 

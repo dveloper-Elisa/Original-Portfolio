@@ -11,17 +11,16 @@ const Project = () => {
 
   return (
     <div id="projects" className="bg-slate-800">
-      <div className="text-center mx-5 bg-zinc-900 rounded-lg my-10">
-        <p className="font-bold tracking-wider text-[1.5rem]">
+      <div className="text-center bg-zinc-900 rounded-lg my-10 w-full">
+        <p className="font-bold tracking-wider py-10 text-[1.5rem]">
           Potfolio Project
         </p>
       </div>
       <div className="flex items-center justify-center w-full">
-      <div
-        className={`grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3 
+        <div
+          className={`grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3 
           bg-slate-900 w-[80%]`}
-      >
-        
+        >
           {project.map((proj) => {
             return (
               <>
@@ -38,8 +37,7 @@ const Project = () => {
               </>
             );
           })}
-       
-      </div>
+        </div>
       </div>
     </div>
   );
