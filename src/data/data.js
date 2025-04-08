@@ -15,6 +15,37 @@ const projectArray = [
     link: "https://kabilacoffee.rw/",
   },
   {
+    image: "https://kabc.gope.rw/images/logo.jpg",
+    lang1: "MySQL",
+    lang2: "PHP",
+    lang3: "AJAX",
+    lang4: "bootstrap",
+    name: "Hotel Managemenet",
+    date:
+      new Date().getFullYear() +
+      ":0" +
+      new Date().getMonth() +
+      ":" +
+      new Date().getDate(),
+    link: "https://kabc.gope.rw",
+  },
+  {
+    image:
+      "https://centrestpaul.com/storage/images/pj0sMi7Vqy0dvvZBop246PL9b7UkugFe2TuR3BpB.png",
+    lang1: "MySQL",
+    lang2: "PHP",
+    lang3: "AJAX",
+    lang4: "bootstrap",
+    name: "Saint Paul Hotel Management",
+    date:
+      new Date().getFullYear() +
+      ":0" +
+      new Date().getMonth() +
+      ":" +
+      new Date().getDate(),
+    link: "https://saintpaul.gope.rw/",
+  },
+  {
     image: "https://www.uwu.ac.lk/wp-content/uploads/fMpslider.jpg",
     lang1: "html",
     lang2: "CSS",
@@ -59,7 +90,8 @@ const projectArray = [
     link: "https://play-films-h1hsbsmhc-elisa-kwizeras-projects.vercel.app",
   },
   {
-    image: "https://m.bbb.org/prod/corecmsimages/03e136d8-c7c8-4fd8-be3e-876d90d00b58.jpg",
+    image:
+      "https://m.bbb.org/prod/corecmsimages/03e136d8-c7c8-4fd8-be3e-876d90d00b58.jpg",
     lang1: "React.tsx",
     lang2: "TailwindCss",
     lang3: "Express",
