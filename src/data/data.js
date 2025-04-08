@@ -6,12 +6,7 @@ const projectArray = [
     lang3: "NodeJs",
     lang4: "tailwindcss",
     name: "Coffee Production",
-    date:
-      new Date().getFullYear() +
-      ":0" +
-      new Date().getMonth() +
-      ":" +
-      new Date().getDate(),
+    date: "2024",
     link: "https://kabilacoffee.rw/",
   },
   {
@@ -21,12 +16,7 @@ const projectArray = [
     lang3: "AJAX",
     lang4: "bootstrap",
     name: "Hotel Managemenet",
-    date:
-      new Date().getFullYear() +
-      ":0" +
-      new Date().getMonth() +
-      ":" +
-      new Date().getDate(),
+    date: "2025",
     link: "https://kabc.gope.rw",
   },
   {
@@ -37,12 +27,7 @@ const projectArray = [
     lang3: "AJAX",
     lang4: "bootstrap",
     name: "Saint Paul Hotel Management",
-    date:
-      new Date().getFullYear() +
-      ":0" +
-      new Date().getMonth() +
-      ":" +
-      new Date().getDate(),
+    date: "2025",
     link: "https://saintpaul.gope.rw/",
   },
   {
@@ -52,12 +37,7 @@ const projectArray = [
     lang3: "PHP",
     lang4: "MySQL",
     name: "Lecture_Pro",
-    date:
-      new Date().getFullYear() +
-      ":0" +
-      new Date().getMonth() +
-      ":" +
-      new Date().getDate(),
+    date: "2025",
     link: "https://github.com/dveloper-Elisa/lecturePro",
   },
   {
@@ -67,12 +47,7 @@ const projectArray = [
     lang3: "Vanilajs",
     lang4: "Express",
     name: "Study_hub",
-    date:
-      new Date().getFullYear() +
-      ":0" +
-      new Date().getMonth() +
-      ":" +
-      new Date().getDate(),
+    date: "2023",
     link: "https://studyhubfree.netlify.app/",
   },
   {
@@ -81,12 +56,7 @@ const projectArray = [
     lang2: "React.js",
     lang3: "TailwindCSS",
     name: "Film App",
-    date:
-      new Date().getFullYear() +
-      ":0" +
-      new Date().getMonth() +
-      ":" +
-      new Date().getDate(),
+    date: "2023",
     link: "https://play-films-h1hsbsmhc-elisa-kwizeras-projects.vercel.app",
   },
   {
@@ -97,12 +67,7 @@ const projectArray = [
     lang3: "Express",
     lang4: "MongoDB",
     name: "E_hotel Booking",
-    date:
-      new Date().getFullYear() +
-      ":0" +
-      new Date().getMonth() +
-      ":" +
-      new Date().getDate(),
+    date: "2025",
     link: "https://github.com/dveloper-Elisa/e-booking",
   },
   {
@@ -111,12 +76,7 @@ const projectArray = [
     lang2: "css",
     lang3: "VanellaJS",
     name: "Car_shpping",
-    date:
-      new Date().getFullYear() +
-      ":0" +
-      new Date().getMonth() +
-      ":" +
-      new Date().getDate(),
+    date: "2022",
     link: "https://car-shoping-e8bgid9py-elisa-kwizeras-projects.vercel.app",
   },
 ];
