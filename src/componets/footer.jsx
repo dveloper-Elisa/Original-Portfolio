@@ -2,9 +2,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 items-center sm:grid-cols-1 gap-10 px-8 py-8 bg-gray-800 text-white">
+    // <footer className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 items-center sm:grid-cols-1 gap-10 px-8 py-8 bg-gray-800 text-white">
+    <footer className="flex flex-col items-center justify-center sticky bg-blend-darken shadow-xl top-0 z-10 max-w-full bg-gray-800">
+    <div className="flex flex-row items-center justify-between w-[80%]">
       {/* Contact Section */}
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col w-1/3 gap-3">
         <h3 className="text-lg font-semibold">My Contact</h3>
         <div>
           <p className="flex gap-2 items-center">
@@ -49,7 +51,7 @@ const Footer = () => {
       </div>
 
       {/* Social Media Section */}
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col w-1/3 gap-3">
         <h3 className="text-lg font-semibold">My Social Media</h3>
         <Link
           to="https://www.linkedin.com/in/kwizera-elissa-640448224/"
@@ -87,20 +89,21 @@ const Footer = () => {
       </div>
 
       {/* Quick Navigation Section */}
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col w-1/3 gap-3">
         <h3 className="text-lg font-semibold">Get in Touch</h3>
         <p>
           Stay connected with me to learn more about my services and explore how
           we can work together to create impactful solutions.
         </p>
       </div>
-
+  </div>
       {/* Footer Bottom Section */}
-      <div className="col-span-full mt-8 text-center border-t border-gray-700 pt-4">
-        <p className="text-yellow-500">
+      <div className="mt-8 text-center w-[80%] border-t border-gray-700 pt-4">
+        <p className="text-yellow-500 py-5">
           &copy; {new Date().getFullYear()} All rights reserved to Elisa
         </p>
       </div>
+    
     </footer>
   );
 };
