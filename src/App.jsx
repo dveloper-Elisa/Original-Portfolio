@@ -9,6 +9,9 @@ import Notfound from "./pages/pagenotfound";
 import "./alternate-layout.css";
 import "./editorial-layout.css";
 import "./professional-layout.css";
+import "./system-layout.css";
+import "./consulting-layout.css";
+import "./minimal-portfolio-layout.css";
 
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem("portfolio-theme") || "dark");
