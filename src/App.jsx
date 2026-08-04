@@ -6,12 +6,7 @@ import WhatsAppWidget from "./componets/whatsappWidget";
 import CvModal from "./componets/cvModal";
 import Home from "./pages/home";
 import Notfound from "./pages/pagenotfound";
-import "./alternate-layout.css";
-import "./editorial-layout.css";
-import "./professional-layout.css";
-import "./system-layout.css";
-import "./consulting-layout.css";
-import "./minimal-portfolio-layout.css";
+import "./executive-layout.css";
 
 function App() {
   const [theme, setTheme] = useState(() => localStorage.getItem("portfolio-theme") || "dark");
