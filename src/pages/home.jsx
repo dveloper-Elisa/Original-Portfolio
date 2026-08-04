@@ -17,8 +17,8 @@ const Home = ({ onOpenCV }) => (
         <div className="hero-copy">
           <p className="eyebrow"><span /> Available for opportunities</p>
           <p className="hero-intro">Hello, I&apos;m Elisa</p>
-          <h1>Building thoughtful<br /><em>digital experiences.</em></h1>
-          <p className="hero-description">A full-stack developer who turns ambitious ideas into fast, accessible web and mobile products that people enjoy using.</p>
+          <h1>Software for<br /><em>real operations.</em></h1>
+          <p className="hero-description">I build web and mobile systems for teams that need reliable tools for daily work, customer service, and business growth.</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#projects">Explore my work <i className="fa fa-arrow-down" /></a>
             <button className="button button-hire" onClick={onOpenCV}><i className="fa fa-file-text-o" /> Hire me</button>
