@@ -3,7 +3,7 @@
 .hero-image-frame img { animation:hero-image-shift 7s ease-in-out infinite alternate; }
 .hero-visual::after { content:""; position:absolute; z-index:1; width:68%; height:68%; border-radius:50%; background:var(--accent); opacity:.12; filter:blur(24px); animation:hero-glow-pulse 4.5s ease-in-out infinite; }
 .trusted-row .trusted-logo-track { display:flex; align-items:center; justify-content:space-around; gap:34px; width:max-content; min-width:100%; animation:logos-drift 24s ease-in-out infinite alternate; }
-.trusted-row img { flex:0 0 auto; max-width:122px; max-height:42px; filter:none; opacity:1; }
+.trusted-row .trusted-logo-track img { flex:0 0 auto; max-width:122px; max-height:42px; filter:none !important; opacity:1 !important; mix-blend-mode:normal; }
 
 @keyframes logos-drift {
   from { transform:translateX(-24px); }
@@ -26,8 +26,8 @@
 }
 
 @media (max-width:800px) {
-  .trusted-row .trusted-logo-track { gap:25px; justify-content:flex-start; animation-duration:10ms; }
-  .trusted-row img { max-width:96px; max-height:32px; }
+  .trusted-row .trusted-logo-track { gap:25px; justify-content:flex-start; animation-duration:10s; }
+  .trusted-row .trusted-logo-track img { max-width:96px; max-height:32px; }
 }
 
 @media (prefers-reduced-motion:reduce) {
