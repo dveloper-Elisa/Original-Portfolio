@@ -1,5 +1,27 @@
 const projectArray = [
   {
+    image: "https://forefrontservices.rw/wp-content/uploads/2023/06/fore-front.svg",
+    imageFit: "contain",
+    lang1: "Inventory",
+    lang2: "Procurement",
+    lang3: "Finance",
+    name: "Stock Management & Inventory Control",
+    description: "A management platform for Forefront Services Ltd that streamlines stock control, procurement workflows, and financing operations.",
+    date: "Live",
+    link: "https://stock.forefrontservices.rw",
+  },
+  {
+    image: "izuba.png",
+    imageFit: "contain",
+    lang1: "Savings",
+    lang2: "Loans",
+    lang3: "Fintech",
+    name: "Izuba Saving Scheme",
+    description: "A savings and loan platform for Izuba Radio and TV employees, helping them save money and access loans more easily.",
+    date: "Live",
+    link: "https://izuba-money.vercel.app/",
+  },
+  {
     image: "kabilacoffee.rw_.png",
     lang1: "MongoDB",
     lang2: "React.js",

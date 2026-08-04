@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const Batton = (props) => {
   const { color, contact, onClick, classname } = props;
 

@@ -1,21 +1,33 @@
+import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import Navigation from "./componets/navigation";
-import Home from "./pages/home";
-import { Routes, Route } from "react-router-dom";
 import Footer from "./componets/footer";
+import WhatsAppWidget from "./componets/whatsappWidget";
+import CvModal from "./componets/cvModal";
+import Home from "./pages/home";
 import Notfound from "./pages/pagenotfound";
 
 function App() {
+  const [theme, setTheme] = useState(() => localStorage.getItem("portfolio-theme") || "dark");
+  const [cvOpen, setCvOpen] = useState(false);
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem("portfolio-theme", theme);
+  }, [theme]);
+
   return (
-    <div
-      className={"bg-slate-900 gap-3  text-white ring-slate-900/5 items-center lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 shadow-2xl p-0"
-      }
-    >
-      <Navigation/>
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/*" element={<Notfound />} />
-      </Routes>
+    <div className="app-shell">
+      <Navigation theme={theme} setTheme={setTheme} onOpenCV={() => setCvOpen(true)} />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home onOpenCV={() => setCvOpen(true)} />} />
+          <Route path="/*" element={<Notfound />} />
+        </Routes>
+      </main>
       <Footer />
+      <WhatsAppWidget />
+      <CvModal open={cvOpen} onClose={() => setCvOpen(false)} />
     </div>
   );
 }

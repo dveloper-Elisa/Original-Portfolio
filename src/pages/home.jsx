@@ -1,100 +1,50 @@
-import { Link } from "react-router-dom";
+/* eslint-disable react/prop-types */
 import About from "./aboutme";
 import Project from "./projects";
 import Skillcomponent from "../componets/skills";
 import Me from "./me";
+import Certificates from "./certificates";
+import "./home.css";
 
-const Home = () => {
-  return (
-    <div className="bg-zinc-950" id="home">
-      <div className="flex flex-col items-center min-h-screen w-full px-5 justify-evenly bg-slate-900 text-white">
-        {/* Hero Section */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 w-full lg:px-[10%]">
-          {/* Right Section */}
-          <div className="text-center md:text-left w-full md:w-1/3 px-4">
-            <h2 className="text-2xl md:text-4xl font-semibold">I{`'`}m</h2>
-            <h1 className="text-3xl md:text-5xl font-extrabold mb-3">
-              Elisa Kwizera
-            </h1>
-            <hr className="w-1/2 h-1 bg-yellow-500 mb-4 mx-auto md:mx-0" />
-            <p className="max-w-lg text-lg leading-relaxed">
-              A full-stack Developer specializing in mobile and web
-              applications, with over 3 years of experience in UI/UX design and
-              progressive web applications.
-            </p>
+const experienceLogos = ["izuba.png", "https://forefrontservices.rw/wp-content/uploads/2023/06/fore-front.svg", "aptc.png", "Picture1.png", "download.jpeg", "qt=q_95.webp"];
+
+const Home = ({ onOpenCV }) => (
+  <>
+    <section className="hero section" id="home">
+      <div className="hero-glow hero-glow-one" />
+      <div className="hero-glow hero-glow-two" />
+      <div className="container hero-grid">
+        <div className="hero-copy">
+          <p className="eyebrow"><span /> Available for opportunities</p>
+          <p className="hero-intro">Hello, I&apos;m Elisa</p>
+          <h1>Building thoughtful<br /><em>digital experiences.</em></h1>
+          <p className="hero-description">A full-stack developer who turns ambitious ideas into fast, accessible web and mobile products that people enjoy using.</p>
+          <div className="hero-actions">
+            <a className="button button-primary" href="#projects">Explore my work <i className="fa fa-arrow-down" /></a>
+            <button className="button button-hire" onClick={onOpenCV}><i className="fa fa-file-text-o" /> Hire me</button>
+            <a className="button button-ghost" href="#contact"><i className="fa fa-paper-plane-o" /> Get in touch</a>
           </div>
-
-          {/* Center Section */}
-          <div className="w-full md:w-1/3 flex justify-center">
-            <img
-              // src="./resized.png"
-              src="./me1.png"
-              alt="Elisa Kwizera"
-              className="w-40 md:w-56 lg:w-64 rounded-full border-4 border-yellow-500 translate-x-10 transition-all duration-1000 hover:scale-150 scale-125 inset-y-72 inset-x-11"
-            />
-          </div>
-
-          {/* Left Section (Social Links) */}
-          <div className="text-center md:text-left w-full md:w-1/3 px-4">
-            <h3 className="font-light text-lg mb-3">Our Services</h3>
-            <p className="mb-5 text-left max-w-[20rem] mx-auto md:mx-0">
-              Crafting high-quality, innovative software solutions designed to
-              enhance your experience and drive meaningful impact.
-            </p>
-            <div className="flex gap-4 justify-center md:justify-start">
-              {[
-                {
-                  href: "https://web.facebook.com/kwizera.elissa.14",
-                  icon: "fa-facebook",
-                },
-                { href: "https://x.com/KwizersE", icon: "fa-twitter" },
-                {
-                  href: "https://www.instagram.com/kwizeraelissa369/",
-                  icon: "fa-instagram",
-                },
-                { href: "https://wa.me/250787647168", icon: "fa-whatsapp" },
-              ].map(({ href, icon }, idx) => (
-                <Link key={idx} to={href} target="_blank">
-                  <i
-                    className={`fa ${icon} text-yellow-500 rounded-full bg-slate-500 p-4 w-10 h-10 flex items-center justify-center hover:bg-slate-600 transition`}
-                  ></i>
-                </Link>
-              ))}
-            </div>
+          <div className="hero-meta">
+            <div><strong>4+</strong><span>Years creating</span></div>
+            <div><strong>15+</strong><span>Projects shipped</span></div>
+            <div><strong>100%</strong><span>Driven by craft</span></div>
           </div>
         </div>
-
-        {/* Company Logos Section */}
-        <div className="flex items-center justify-center w-full bg-slate-950 p-5 rounded-lg my-10">
-          <div className="grid grid-cols-5 gap-5 max-w-md sm:max-w-lg md:max-w-3xl">
-            {[
-              "izuba.png",
-              "aptc.png",
-              "Picture1.png",
-              "download.jpeg",
-              "qt=q_95.webp",
-            ].map((src, idx) => (
-              <div
-                key={idx}
-                className="bg-slate-800 px-3 py-2 rounded-md flex items-center"
-              >
-                <img
-                  src={`./${src}`}
-                  alt="Project logo"
-                  className="w-auto h-auto mx-auto"
-                />
-              </div>
-            ))}
-          </div>
+        <div className="hero-visual">
+          <div className="orbit orbit-one" /><div className="orbit orbit-two" />
+          <div className="hero-image-frame"><img src="/me1.png" alt="Elisa Kwizera" /></div>
+          <div className="floating-card code-card"><span>&lt;/&gt;</span><p>Full-stack<br />developer</p></div>
+          <div className="floating-card location-card"><i className="fa fa-map-marker" /><p>Based in<br /><strong>Rwanda</strong></p></div>
         </div>
       </div>
-      {/* What I Can Do Section */}
-      <About />
-      <Me />
-      <Project />
-      <Skillcomponent />
-    </div>
-  );
-};
+      <div className="container trusted-row"><span>Selected experience with</span><div className="trusted-logo-window"><div className="trusted-logo-track">{experienceLogos.map((src) => <img key={src} src={src.startsWith("http") ? src : `/${src}`} alt="Partner logo" />)}</div></div></div>
+    </section>
+    <About />
+    <Project />
+    <Certificates />
+    <Skillcomponent />
+    <Me />
+  </>
+);
 
 export default Home;
